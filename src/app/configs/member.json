@@ -45,7 +45,7 @@
             }
         },
         "img_identity_photo": {
-            "type": "text",
+            "type": "image",
             "props": {
                 "required": true
             }

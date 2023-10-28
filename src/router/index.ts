@@ -17,14 +17,14 @@ const router = createRouter({
       component: () => import('@/views/login/login.vue'),
     },
     {
+      path: '/unauthenticated/register',
+      name: 'register',
+      component: () => import('@/views/login/register.vue'),
+    },
+    {
       path: '/privacy-policy',
       name: 'privacy-policy',
       component: PrivacyPolicy,
-    },
-    {
-      path: '/storefront/storefront',
-      name: 'storefront',
-      component: () => import('@/views/storefront/storefront.vue'),
     },
     {
       path: '/',
@@ -79,7 +79,7 @@ for (const module of menu as any) {
 router.beforeEach((to, from, next) => {
   nextTick(() => {
     console.log(to, from)
-    if (to.name == 'login' || to.name == 'storefront') {
+    if (to.name == 'login' || to.name == 'register') {
       console.log('router', 1, to.name)
       next()
       return

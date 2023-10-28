@@ -26,14 +26,14 @@ export const filter: StringObject<StringObject> = {
     not_feasable: "Tidak Layak"
   },
   verified_code: {
-    pending: 'Pending',
-    verified: 'Verified',
-    rejected: 'Rejected',
+    2: 'Pending',
+    1: 'Verified',
+    0: 'Rejected',
   },
   verified_code_color: {
-    pending: 'warning',
-    verified: 'success',
-    rejected: 'error',
+    2: 'warning',
+    1: 'success',
+    0: 'error',
   }
 }
 

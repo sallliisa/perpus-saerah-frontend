@@ -14,7 +14,6 @@ const loginMessage = ref<{ message: string; type: 'error' | 'warning' | 'info' |
 const router = useRouter()
 
 function onLoginSuccess(res: Record<string, any>) {
-  console.log(res)
   if (res.data.token) saveProfile(res.data)
   if (modules().value.length == 0) modules().buildModules()
   if (res.data.permissions.length == 0 && app.mode == 'PRODUCTION') {
@@ -39,29 +38,31 @@ const loginForm = {
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center gap-4">
-    <div class="text-3xl font-bold">Login</div>
-  </div>
-  <div class="flex flex-col gap-4">
-    <Form
-      v-bind="loginForm"
-      submitOnEnter
-      :targetAPI="'/login?custom'"
-      :postAdditionalData="{access_user: 'tulen_admins', mobile: 0}"
-      :onSuccess="onLoginSuccess"
-    >
-      <template #submitButton="{loading}">
-        <Button :disabled="loading" type="submit" class="mt-6 w-full">
-          <div v-if="!loading">Login</div>
-          <Spinner v-else />
-        </Button>
-      </template>
-    </Form>
-    <div class="flex items-center justify-center">
-      <div @click="() => $router.push({name: 'register'})" class="text-muted underline cursor-pointer">Belum punya akun?</div>
+  <main class="flex flex-col gap-8">
+    <div class="flex flex-col items-center justify-center gap-4">
+      <div class="text-3xl font-bold">Login</div>
     </div>
-  </div>
-  <div class="flex w-full items-center justify-center">
-    <Toast v-if="loginMessage.message" :type="loginMessage.type">{{ loginMessage.message }}</Toast>
-  </div>
+    <div class="flex flex-col gap-4">
+      <Form
+        v-bind="loginForm"
+        submitOnEnter
+        :targetAPI="'/login?custom'"
+        :postAdditionalData="{access_user: 'tulen_admins', mobile: 0}"
+        :onSuccess="onLoginSuccess"
+      >
+        <template #submitButton="{loading}">
+          <Button :disabled="loading" type="submit" class="mt-6 w-full">
+            <div v-if="!loading">Login</div>
+            <Spinner v-else />
+          </Button>
+        </template>
+      </Form>
+      <div class="flex items-center justify-center">
+        <div @click="() => $router.push({name: 'register'})" class="text-muted underline cursor-pointer">Belum punya akun?</div>
+      </div>
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <Toast v-if="loginMessage.message" :type="loginMessage.type">{{ loginMessage.message }}</Toast>
+    </div>
+  </main>
 </template>

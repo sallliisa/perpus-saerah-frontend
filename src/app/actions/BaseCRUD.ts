@@ -77,6 +77,12 @@ export const immutableDefaults: Partial<BaseCRUDConfig> = {
               defaultToFirst: true,
           }
         },
+        phone: {
+          type: "text",
+          props: {
+            required: true
+          }
+        },
         nationality_type: {
         type: 'radio',
           props: {

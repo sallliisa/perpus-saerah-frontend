@@ -4,6 +4,19 @@ import type { Modules } from './types'
 // permission is only read on route-level
 const menu: Modules = [
   {
+    name: 'library',
+    title: 'Perpustakaan',
+    icon: 'library_books',
+    description: 'Data Buku',
+    routes: [
+      {
+        name: 'library',
+        title: 'Perpustakaan',
+        icon: 'library_books',
+      },
+    ],
+  },
+  {
     name: 'master',
     title: 'Master',
     icon: 'database',

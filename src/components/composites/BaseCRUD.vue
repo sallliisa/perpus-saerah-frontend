@@ -329,7 +329,7 @@ console.log("CLOG: BASECRUD MOUNTED")
                     </div>
                   </div>
                 </div>
-                <div v-if="!hideCreate && baseConfig.actions?.create" class="pl-4 flex items-center">
+                <div v-if="!hideCreate && baseConfig.actions?.create && permissions.create" class="pl-4 flex items-center">
                   <Button v-if="!$slots.createButton" @click="setCRUDMode('create')"><Icon>add</Icon>Tambah</Button>
                   <slot name="createButton" v-bind="{ props, setCRUDMode, currentView }"></slot>
                 </div>
@@ -350,9 +350,9 @@ console.log("CLOG: BASECRUD MOUNTED")
             <template #l-tableActions="{data}">
               <slot v-if="$slots['l-tableActions']" name="l-tableActions" v-bind="{data, setCRUDMode}"></slot>
               <div v-else class="flex flex-row gap-2 items-center">
-                <Button v-if="baseConfig.actions?.show" color="info" square @click="() => setCRUDMode('show', data.id)"><Icon>info</Icon></Button>
-                <Button v-if="baseConfig.actions?.update" color="warning" square @click="() => setCRUDMode('update', data.id)"><Icon>edit</Icon></Button>
-                <DeleteConfirmationModal v-if="baseConfig.actions?.delete" :deleteAction="() => setCRUDMode('delete', data.id)"></DeleteConfirmationModal>
+                <Button v-if="baseConfig.actions?.show && permissions.show" color="info" square @click="() => setCRUDMode('show', data.id)"><Icon>info</Icon></Button>
+                <Button v-if="baseConfig.actions?.update && permissions.update" color="warning" square @click="() => setCRUDMode('update', data.id)"><Icon>edit</Icon></Button>
+                <DeleteConfirmationModal v-if="baseConfig.actions?.delete && permissions.delete" :deleteAction="() => setCRUDMode('delete', data.id)"></DeleteConfirmationModal>
                 <slot v-if="$slots['l-additionalTableActions']" name="l-additionalTableActions" v-bind="{data, setCRUDMode}"></slot>
               </div>
             </template>

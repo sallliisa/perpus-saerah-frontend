@@ -18,30 +18,32 @@ const memberConfig = await userConfig().get('member')
 </script>
 
 <template>
-  <div class="flex flex-col items-center justify-center gap-4 sticky">
-    <div class="text-3xl font-bold">Register</div>
-    <div @click="() => $router.push({name: 'login'})" class="text-muted underline cursor-pointer">Kembali ke halaman login</div>
-  </div>
-  <div class="flex flex-col gap-4">
-    <Form
-      :fields="memberConfig.fieldAdd.slice(0, -1)"
-      :inputConfig="{...immutableDefaults.inputConfig, ...memberConfig.inputConfig}"
-      :fieldsAlias="{...immutableDefaults.fieldsAlias, ...memberConfig.fieldsAlias}"
-      targetAPI="member"
-      :onSuccess="async (payload, res) => {
-        toast().setSuccess('Berhasil mendaftarkan akun! Silahkan login untuk masuk ke aplikasi')
-        $router.push({name: 'login'})
-      }"
-    >
-      <template #submitButton="{loading}">
-        <Button :disabled="loading" type="submit" class="mt-6 w-full">
-          <div v-if="!loading">Daftar</div>
-          <Spinner v-else />
-        </Button>
-      </template>
-    </Form>
-  </div>
-  <div class="flex w-full items-center justify-center">
-    <Toast v-if="loginMessage.message" :type="loginMessage.type">{{ loginMessage.message }}</Toast>
-  </div>
+  <main class="flex flex-col gap-8">
+    <div class="flex flex-col items-center justify-center gap-4 sticky">
+      <div class="text-3xl font-bold">Register</div>
+      <div @click="() => $router.push({name: 'login'})" class="text-muted underline cursor-pointer">Kembali ke halaman login</div>
+    </div>
+    <div class="flex flex-col gap-4 max-h-96 p-2 overflow-auto">
+      <Form
+        :fields="memberConfig.fieldAdd.slice(0, -1)"
+        :inputConfig="{...immutableDefaults.inputConfig, ...memberConfig.inputConfig}"
+        :fieldsAlias="{...immutableDefaults.fieldsAlias, ...memberConfig.fieldsAlias}"
+        targetAPI="member"
+        :onSuccess="async (payload, res) => {
+          toast().setSuccess('Berhasil mendaftarkan akun! Silahkan login untuk masuk ke aplikasi')
+          $router.push({name: 'login'})
+        }"
+      >
+        <template #submitButton="{loading}">
+          <Button :disabled="loading" type="submit" class="mt-6 w-full">
+            <div v-if="!loading">Daftar</div>
+            <Spinner v-else />
+          </Button>
+        </template>
+      </Form>
+    </div>
+    <div class="flex w-full items-center justify-center">
+      <Toast v-if="loginMessage.message" :type="loginMessage.type">{{ loginMessage.message }}</Toast>
+    </div>
+  </main>
 </template>

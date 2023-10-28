@@ -1,7 +1,7 @@
 const app = {
   name: 'Tulen | Admin',
   layout: 'SIDEBAR',
-  mode: 'EARLY_DEVELOPMENT',
+  mode: 'DEVELOPMENT',
   company: 'HK',
   guide: 'https://drive.google.com/file/d/1zdjwiNfAGVRIoixiMMaw07EmbEZ2Xp9L/view?usp=sharing',
   logo: {

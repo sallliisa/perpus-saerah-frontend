@@ -1,5 +1,18 @@
 const menu = [
   {
+    name: 'library',
+    title: 'Perpustakaan',
+    icon: 'library_books',
+    description: 'Data Buku',
+    routes: [
+      {
+        name: 'library',
+        title: 'Perpustakaan',
+        icon: 'library_books',
+      },
+    ],
+  },
+  {
     name: 'dashboard',
     title: 'Dashboard',
     icon: 'home',
