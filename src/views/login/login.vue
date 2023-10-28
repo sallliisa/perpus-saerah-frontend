@@ -8,13 +8,13 @@ import { getLocalStorage } from '@/utils/browser'
 import { Form } from '@/components/composites'
 import {userConfig} from '@/stores/userconfig'
 import app from '@/config'
-import type { StringObject } from '@/types'
+import services from '@/utils/services'
 
 const loginMessage = ref<{ message: string; type: 'error' | 'warning' | 'info' | 'success' | undefined }>({ message: '', type: undefined })
 const router = useRouter()
 
 function onLoginSuccess(res: Record<string, any>) {
-  if (res.data.token) saveProfile(res.data)
+  if (res.data) saveProfile(res.data)
   if (modules().value.length == 0) modules().buildModules()
   if (res.data.permissions.length == 0 && app.mode == 'PRODUCTION') {
     loginMessage.value = { message: 'Anda tidak memiliki akses ke aplikasi ini', type: 'error' }
@@ -57,8 +57,17 @@ const loginForm = {
           </Button>
         </template>
       </Form>
-      <div class="flex items-center justify-center">
+      <div class="flex flex-col gap-2 items-center justify-center">
         <div @click="() => $router.push({name: 'register'})" class="text-muted underline cursor-pointer">Belum punya akun?</div>
+        <div class="text-muted">Atau</div>
+        <div
+          @click="() => services.post('login', {email: 'GUEST', password: 'GUEST'}).then(res => {
+            onLoginSuccess(res)
+          })"
+          class="text-muted underline cursor-pointer"
+        >
+          Masuk sebagai tamu
+        </div>
       </div>
     </div>
     <div class="flex w-full items-center justify-center">

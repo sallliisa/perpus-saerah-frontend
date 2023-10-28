@@ -2,6 +2,7 @@
 import { Form } from '@/components/composites';
 import { softReload } from '@/stores/softreload';
 import { toast } from '@/stores/toast';
+import { hasPermission } from '@/utils/auth';
 import services from '@/utils/services';
 import { inject } from 'vue';
 
@@ -12,7 +13,7 @@ const data = await services.list('bookComment', {book_id: book.id})
 
 <template>
   <div class="flex flex-col gap-4">
-    <Card>
+    <Card v-if="hasPermission('create-book-comment')">
       <Form
         :inputConfig="{
           content: {
@@ -30,7 +31,7 @@ const data = await services.list('bookComment', {book_id: book.id})
         }"
       ></Form>
     </Card>
-    <div class="grid grid-dynamic-[200px] gap-4">
+    <div v-if="data?.length" class="grid grid-dynamic-[200px] gap-4">
       <Card v-for="comment in data" class="gap-2">
         <div class="flex flex-col">
           <div>{{ comment.member_user_name }}</div>
@@ -39,5 +40,6 @@ const data = await services.list('bookComment', {book_id: book.id})
         <div class="italic">"{{ comment.content }}"</div>
       </Card>
     </div>
+    <div class="text-muted" v-else>Belum ada komentar untuk buku ini</div>
   </div>
 </template>

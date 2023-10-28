@@ -61,7 +61,6 @@ onUnmounted(() => {
 const layoutMap: any = {
   DEFAULT: defineAsyncComponent(() => import('@/layouts/Authenticated.vue')),
   unauthenticated: defineAsyncComponent(() => import('@/layouts/Unauthenticated.vue')),
-  storefront: defineAsyncComponent(() => import('@/layouts/Storefront.vue')),
 }
 
 const route = useRoute()

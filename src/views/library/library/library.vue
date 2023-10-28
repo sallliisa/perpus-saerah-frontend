@@ -22,9 +22,22 @@ const search = ref()
       <template #fallback>
         <Spinner/>
       </template>
-      <BookList v-if="!$route.query['library_view']"/>
-      <BookDetail v-else-if="$route.query['library_view'] == 'show'"/>
+      <Transition name="route" mode="out-in">
+        <BookList v-if="!$route.query['library_view']"/>
+        <BookDetail v-else-if="$route.query['library_view'] == 'show'"/>
+      </Transition>
     </Suspense>
   </main>
 </template>
 
+<style>
+.route-enter-active,
+.route-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.route-enter-from,
+.route-leave-to {
+  opacity: 0;
+}
+</style>
