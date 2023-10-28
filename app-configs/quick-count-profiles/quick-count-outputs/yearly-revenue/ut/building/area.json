@@ -1,0 +1,23 @@
+{
+  "fields": [
+    "year",
+    "land_value",
+    "office_value",
+    "retail_value",
+    "building_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "land_value": "Luas Lahan",
+    "office_value": "Luas Office",
+    "retail_value": "Luas Retail",
+    "building_value": "Luas Building"
+  },
+  "fieldsType": {
+    "land_value": { "type": "unit", "unit": " m2" },
+    "office_value": { "type": "unit", "unit": " m2" },
+    "retail_value": { "type": "unit", "unit": " m2" },
+    "building_value": { "type": "unit", "unit": " m2" }
+  },
+  "paginated": true
+}

@@ -1,0 +1,20 @@
+{
+  "fields": [
+    "year",
+    "office_value",
+    "retail_value",
+    "service_charge_office_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "office_value": "Office",
+    "retail_value": "Retail",
+    "service_charge_office_value": "Service Charge Office"
+  },
+  "fieldsType": {
+    "office_value": { "type": "currency" },
+    "retail_value": { "type": "currency" },
+    "service_charge_office_value": { "type": "currency" }
+  },
+  "paginated": true
+}

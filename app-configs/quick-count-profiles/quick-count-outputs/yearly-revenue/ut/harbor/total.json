@@ -1,0 +1,26 @@
+{
+  "fields": [
+    "year",
+    "terminal_dock_value",
+    "harbor_value",
+    "revenue_value",
+    "total_revenue_value",
+    "cumulative_revenue_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "terminal_dock_value": "Pendapatan Jasa Terminal dan Dermaga",
+    "harbor_value": "Pendapatan Jasa Pelabuhan",
+    "revenue_value": "Pendapatan",
+    "total_revenue_value": "Total",
+    "cumulative_revenue_value": "Akumulasi Pendapatan"
+  },
+  "fieldsType": {
+    "terminal_dock_value": {"type": "currency"},
+    "harbor_value": {"type": "currency"},
+    "revenue_value": {"type": "currency"},
+    "total_revenue_value": {"type": "currency"},
+    "cumulative_revenue_value": {"type": "currency"}
+  },
+  "paginated": true
+}

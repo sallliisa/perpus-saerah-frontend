@@ -1,0 +1,55 @@
+{
+  "fields": [
+    "year",
+    "net_profit_value",
+    "depreciation_value",
+    "interest_value",
+    "capex_value",
+    "total_free_cash_flow_value",
+    "cumulative_total_free_cash_flow_value",
+    "discounted_factor_value",
+    "total_discounted_value"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "free_cash_flow", "colspan": 6, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "wacc", "colspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"}
+    ],
+    [
+      {"id": "net_profit_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "depreciation_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "interest_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "capex_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "total_free_cash_flow_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "cumulative_total_free_cash_flow_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "discounted_factor_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "total_discounted_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsType": {
+    "net_profit_value": {"type": "currency"},
+    "depreciation_value": {"type": "currency"},
+    "interest_value": {"type": "currency"},
+    "capex_value": {"type": "currency"},
+    "total_free_cash_flow_value": {"type": "currency"},
+    "cumulative_total_free_cash_flow_value": {"type": "currency"},
+    "discounted_factor_value": {"type": "currency"},
+    "total_discounted_value": {"type": "currency"}
+  },
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "net_profit_value": "Net Profit",
+    "depreciation_value": "Depresiasi",
+    "interest_value": "Interest",
+    "capex_value": "CAPEX",
+    "total_free_cash_flow_value": "Total Free Cash Flow (Rp)",
+    "cumulative_total_free_cash_flow_value": "Kumulatif",
+    "discounted_factor_value": "Discounted Factor",
+    "total_discounted_value": "Total Discounted",
+    "free_cash_flow": "Free Cash Flow",
+    "wacc": "WACC"
+  },
+  "getAPI": "yearly_free_cash_flow_profit",
+  "paginated": true
+}

@@ -1,0 +1,33 @@
+{
+  "fields": [
+    "building_area_value",
+    "availability_payment_value",
+    "consession_period_value",
+    "operational_period_value",
+    "loan_period_value"
+  ],
+  "fieldsAlias": {
+    "building_area_value": "Building Area",
+    "availability_payment_value": "Availability Payment",
+    "consession_period_value": "Consession Period",
+    "operational_period_value": "Operational Period",
+    "loan_period_value": "Loan Period"
+  },
+  "fieldsType": {
+    "building_area_value": {
+      "type": "currency"
+    },
+    "availability_payment_value": {
+      "type": "currency"
+    },
+    "consession_period_value": {
+      "type": "currency"
+    },
+    "operational_period_value": {
+      "type": "currency"
+    },
+    "loan_period_value": {
+      "type": "currency"
+    }
+  }
+}

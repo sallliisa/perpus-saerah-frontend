@@ -1,0 +1,76 @@
+{
+  "fields": [
+    "rates_adjustment_percentage",
+    "yearly_inflation_percentage",
+    "yearly_escalation_percentage",
+    "om_revenue_cost_percentage",
+    "user_rates_value",
+    "daily_user_rates_value",
+    "first_year_revenue"
+  ],
+  "inputConfig": {
+    "rates_adjustment_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_inflation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_escalation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "om_revenue_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "user_rates_value": {
+      "type": "currency"
+    },
+    "daily_user_rates_value": {
+      "type": "currency",
+      "props": {
+        "disabled":true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "first_year_revenue": {
+      "type": "currency",
+      "props": {
+        "disabled":true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "rates_adjustment_percentage": "Penyeseuaian Tarif (Per 2 Tahun)",
+    "yearly_inflation_percentage": "Inflasi/Tahun",
+    "yearly_escalation_percentage": "Ekskalasi/Tahun",
+    "om_revenue_cost_percentage": "Biaya OM Terhadap Revenue",
+    "user_rates_value": "User Tarif (Rp/Ltr)",
+    "daily_user_rates_value": "User Tarif (Rp/Hari)",
+    "first_year_revenue": "Pendapatan Tahun Pertama"
+  },
+  "fieldsType": {
+    "rates_adjustment_percentage": {"type": "unit", "unit": "%"},
+    "yearly_inflation_percentage": {"type": "unit", "unit": "%"},
+    "yearly_escalation_percentage": {"type": "unit", "unit": "%"},
+    "om_revenue_cost_percentage": {"type": "unit", "unit": "%"},
+    "user_rates_value": {"type": "currency"},
+    "daily_user_rates_value": {"type": "currency"},
+    "first_year_revenue": {"type": "currency"}
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "fieldList": ["user_name", "user_email", "active", "created_at", "updated_at"],
+    "fieldAdd": ["user_name", "user_email", "user_password", "active"],
+    "fieldShow": ["user_name", "user_email", "user_password", "active", "created_at", "updated_at"],
+    "inputConfig": {
+        "user_name": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "user_email": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "user_password": {
+            "type": "password",
+            "props": {
+                "required": true
+            }
+        }
+    }
+}

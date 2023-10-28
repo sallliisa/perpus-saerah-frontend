@@ -1,0 +1,34 @@
+{
+    "fieldList": ["member_id", "officer_id", "book_id", "created_at", "returned_at"],
+    "fieldShow": ["member_id", "officer_id", "book_id", "created_at", "returned_at", "fine"],
+    "fieldAdd": ["member_id", "book_id"],
+    "fieldsType": {
+        "fine": {"type": "currency"}
+    },
+    "inputConfig": {
+        "member_id": {
+            "type": "lookup",
+            "props": {
+                "required": true,
+                "getAPI": "member",
+                "view": "user_name"
+            }
+        },
+        "book_id": {
+            "type": "lookup",
+            "props": {
+                "required": true,
+                "getAPI": "book"
+            }
+        }
+    },
+    "fieldsAlternateSource": {
+        "member_id": "member_user_name",
+        "officer_id": "officer_user_name",
+        "book_id": "book_name"
+    },
+    "actions": {
+        "delete": false,
+        "update": false
+    }
+}

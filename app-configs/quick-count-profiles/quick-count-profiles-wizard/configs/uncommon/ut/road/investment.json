@@ -1,0 +1,115 @@
+{
+  "fields": [
+    "construction_cost_value",
+    "tools_percentage",
+    "design_percentage",
+    "supervision_percentage",
+    "contingency_percentage",
+    "overhead_percentage",
+    "value_added_after_tax",
+    "ppn_percentage",
+    "idc_percentage",
+    "financial_fee_percentage",
+    "land_percentage"
+  ],
+  "inputConfig": {
+    "construction_cost_value": {
+      "type": "currency"
+    },
+    "tools_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "design_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "supervision_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "overhead_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "ppn_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "financial_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "land_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "contingency_percentage": {
+      "type": "text",
+        "props": {
+           "constraint": ["decimal"],
+           "suffix": "%"
+        }
+     },
+     "idc_percentage": {
+      "type": "text",
+        "props": {
+           "constraint": ["decimal"],
+           "suffix": "%"
+        }
+     },
+     "value_added_after_tax" : {
+        "type": "text",
+        "props": {
+           "constraint": ["decimal"],
+           "suffix": "%"
+        }
+     }
+  },
+  "fieldsAlias": {
+    "construction_cost_value": "Biaya Konstruksi",
+    "tools_percentage": "Peralatan",
+    "design_percentage": "Design",
+    "supervision_percentage": "Supervisi",
+    "overhead_percentage": "Overhead",
+    "ppn_percentage": "PPN",
+    "financial_fee_percentage": "Financial Fee",
+    "land_percentage": "Lahan",
+    "contingency_percentage": "Kontingensi",
+    "idc_percentage": "IDC",
+    "value_added_after_tax": "Value Added After Tax"
+  },
+  "fieldsType": {
+    "construction_cost_value": {"type": "currency"},
+    "tools_percentage": {"type": "unit", "unit": "%"},
+    "design_percentage": {"type": "unit", "unit": "%"},
+    "supervision_percentage": {"type": "unit", "unit": "%"},
+    "overhead_percentage": {"type": "unit", "unit": "%"},
+    "ppn_percentage": {"type": "unit", "unit": "%"},
+    "financial_fee_percentage": {"type": "unit", "unit": "%"},
+    "value_added_after_tax": {"type": "unit", "unit": "%"},
+    "contingency_percentage": {"type": "unit", "unit": "%"},
+    "idc_percentage": {"type": "unit", "unit": "%"}
+  }
+}

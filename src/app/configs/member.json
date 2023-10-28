@@ -1,0 +1,54 @@
+{
+    "fieldList": ["user_name", "user_email", "address", "city", "phone", "verified", "created_at", "updated_at"],
+    "fieldAdd": ["user_name", "identity_number", "user_email", "user_password", "address", "city", "phone", "img_identity_photo", "active"],
+    "fieldShow": ["user_name", "identity_number", "user_email", "user_password", "address", "city", "phone", "img_identity_photo", "active", "verified", "created_at", "updated_at"],
+    "fieldsAlias": {
+        "user_name": "Nama",
+        "user_email": "Email",
+        "user_password": "Password"
+    },
+    "inputConfig": {
+        "user_name": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "user_email": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "identity_number": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "user_password": {
+            "type": "password",
+            "props": {
+                "required": true
+            }
+        },
+        "address": {
+            "type": "textarea",
+            "props": {
+                "required": true
+            }
+        },
+        "city": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "img_identity_photo": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        }
+    }
+}

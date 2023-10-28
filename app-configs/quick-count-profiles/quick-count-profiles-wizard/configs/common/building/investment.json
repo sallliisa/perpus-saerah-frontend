@@ -1,0 +1,396 @@
+{
+  "fields": [
+    "preparatory_work_value",
+    "lower_structure_work_value",
+    "upper_structure_work_value",
+    "architecture_work_value",
+    "mep_work_value",
+    "construction_cost_value",
+    "total_construction_cost_value",
+    "office_finishing_value",
+    "ffe_office_value",
+    "interior_cost_value",
+    "total_interior_cost_value",
+    "land_cost_value",
+    "total_land_cost_value",
+    "soft_cost_percentage",
+    "licensing_legal_percentage",
+    "promec_connection_percentage",
+    "consultant_percentage",
+    "soil_test_percentage",
+    "land_preparation_percentage",
+    "landscape_percentage",
+    "construction_contingencies_percentage",
+    "risk_management_percentage",
+    "pre_ops_percentage",
+    "overhead_percentage",
+    "total_project_cost_value",
+    "ppn_percentage",
+    "financial_fee_percentage",
+    "idc_percentage",
+    "land_percentage"
+  ],
+  "inputConfig": {
+    "preparatory_work_value": {
+      "type": "currency"
+    },
+    "lower_structure_work_value": {
+      "type": "currency"
+    },
+    "upper_structure_work_value": {
+      "type": "currency"
+    },
+    "architecture_work_value": {
+      "type": "currency"
+    },
+    "mep_work_value": {
+      "type": "currency"
+    },
+    "construction_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "total_construction_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "office_finishing_value": {
+      "type": "currency"
+    },
+    "ffe_office_value": {
+      "type": "currency"
+    },
+    "interior_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "total_interior_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "land_cost_value": {
+      "type": "currency"
+    },
+    "total_land_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "soft_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "licensing_legal_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "promec_connection_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "consultant_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "soil_test_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "land_preparation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "landscape_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "construction_contingencies_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "risk_management_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "pre_ops_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "overhead_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "total_project_cost_value": {
+      "type": "currency",
+      "props": {
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "ppn_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "financial_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "idc_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "land_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "soft_cost_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "licensing_legal_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "promec_connection_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "consultant_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "soil_test_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "land_preparation_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "landscape_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "construction_contingencies_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "risk_management_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "pre_ops_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "overhead_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "ppn_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "financial_fee_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "idc_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "land_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "total_investment_cost_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    }
+  },
+  "fieldsAlias": {
+    "preparatory_work_value": "Pekerjaan Persiapan (Rp/m2)",
+    "lower_structure_work_value": "Pekerjaan Struktur Bawah (Rp/m2)",
+    "upper_structure_work_value": "Pekerjaan Struktur Atas (Rp/m2)",
+    "architecture_work_value": "Pekerjaan Arsitektur (Rp/m2)",
+    "mep_work_value": "Pekerjaan MEP  (Rp/m2)",
+    "construction_cost_value": "Biaya Konstruksi",
+    "total_construction_cost_value": "Total Biaya Konstruksi",
+    "office_finishing_value": "Finishing Office (Rp/m2)",
+    "ffe_office_value": "FFE Office (Rp/m2)",
+    "interior_cost_value": "Biaya Interior",
+    "total_interior_cost_value": "Total Biaya Interior",
+    "land_cost_value": "Biaya Lahan",
+    "total_land_cost_value": "Total Biaya Lahan",
+    "soft_cost_percentage": "Soft Cost",
+    "licensing_legal_percentage": "Perizinan dan legal",
+    "promec_connection_percentage": "Sambungan Promec",
+    "consultant_percentage": "Konsultan",
+    "soil_test_percentage": "Soil Test",
+    "land_preparation_percentage": "Persiapan Lahan/ Pembongkaran",
+    "landscape_percentage": "Landscape, Parkir, Jalan",
+    "construction_contingencies_percentage": "Contingencies (Konstruksi)",
+    "risk_management_percentage": "Risk Management",
+    "pre_ops_percentage": "Pre Ops",
+    "overhead_percentage": "Overhead",
+    "total_project_cost_value": "Total Biaya Proyek",
+    "ppn_percentage": "PPN",
+    "financial_fee_percentage": "Financial Fee",
+    "idc_percentage": "IDC",
+    "land_percentage": "Lahan",
+    "soft_cost_value": "Soft Cost",
+    "licensing_legal_value": "Biaya Perizinan dan legal",
+    "promec_connection_value": "Sambungan Promec",
+    "consultant_value": "Konsultant",
+    "soil_test_value": "Soil Test",
+    "land_preparation_value": "Persiapan Lahan/ Pembongkaran",
+    "landscape_value": "Landscape",
+    "construction_contingencies_value": "Contingencies (Konstruksi)",
+    "risk_management_value": "Risk Management",
+    "pre_ops_value": "Pre Ops",
+    "overhead_value": "Overhead",
+    "ppn_value": "PPN",
+    "financial_fee_value": "Financial Fee",
+    "idc_value": "IDC",
+    "land_value": "Land",
+    "total_investment_cost_value": "Total Biaya Investasi"
+  },
+  "fieldsType": {
+    "preparatory_work_value": {"type": "currency"},
+    "lower_structure_work_value": {"type": "currency"},
+    "upper_structure_work_value": {"type": "currency"},
+    "architecture_work_value": {"type": "currency"},
+    "mep_work_value": {"type": "currency"},
+    "construction_cost_value": {"type": "currency"},
+    "total_construction_cost_value": {"type": "currency"},
+    "office_finishing_value": {"type": "currency"},
+    "ffe_office_value": {"type": "currency"},
+    "interior_cost_value": {"type": "currency"},
+    "total_interior_cost_value": {"type": "currency"},
+    "land_cost_value": {"type": "currency"},
+    "total_land_cost_value": {"type": "currency"},
+    "soft_cost_percentage": {"type": "unit", "unit": "%"},
+    "licensing_legal_percentage": {"type": "unit", "unit": "%"},
+    "promec_connection_percentage": {"type": "unit", "unit": "%"},
+    "consultant_percentage": {"type": "unit", "unit": "%"},
+    "soil_test_percentage": {"type": "unit", "unit": "%"},
+    "land_preparation_percentage": {"type": "unit", "unit": "%"},
+    "landscape_percentage": {"type": "unit", "unit": "%"},
+    "construction_contingencies_percentage": {"type": "unit", "unit": "%"},
+    "risk_management_percentage": {"type": "unit", "unit": "%"},
+    "pre_ops_percentage": {"type": "unit", "unit": "%"},
+    "overhead_percentage": {"type": "unit", "unit": "%"},
+    "total_project_cost_value": {"type": "unit", "unit": "%"},
+    "ppn_percentage": {"type": "unit", "unit": "%"},
+    "financial_fee_percentage": {"type": "unit", "unit": "%"},
+    "idc_percentage": {"type": "unit", "unit": "%"},
+    "land_percentage": {"type": "unit", "unit": "%"},
+    "soft_cost_value": {"type": "currency"},
+    "licensing_legal_value": {"type": "currency"},
+    "promec_connection_value": {"type": "currency"},
+    "consultant_value": {"type": "currency"},
+    "soil_test_value": {"type": "currency"},
+    "land_preparation_value": {"type": "currency"},
+    "landscape_value": {"type": "currency"},
+    "construction_contingencies_value": {"type": "currency"},
+    "risk_management_value": {"type": "currency"},
+    "pre_ops_value": {"type": "currency"},
+    "overhead_value": {"type": "currency"},
+    "ppn_value": {"type": "currency"},
+    "financial_fee_value": {"type": "currency"},
+    "idc_value": {"type": "currency"},
+    "land_value": {"type": "currency"},
+    "total_investment_cost_value": {"type": "currency"}
+  }
+}

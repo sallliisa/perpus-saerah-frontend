@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Biaya Proyek",
+    "endpoint": {
+      "ap_dike": "project-cost",
+      "ap_building": "project-cost",
+      "dike": "project-cost",
+      "building": "project-cost",
+      "spam": "project-cost",
+      "harbor": "project-cost",
+      "bridge": "project-cost",
+      "road": "project-cost",
+      "ap_spam": "project-cost",
+      "ap_harbor": "project-cost",
+      "ap_bridge": "project-cost",
+      "ap_road": "project-cost"
+    },
+    "configPath": {
+      "ap_dike": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "ap_building": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "dike": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "building": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "spam": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "harbor": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "bridge": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "road": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "ap_spam": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "ap_harbor": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "ap_bridge": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost",
+      "ap_road": "quick-count-profiles/quick-count-outputs/calculation-results/project-cost/project-cost"
+    }
+  },
+  {
+    "name": "Kelayakan Proyek",
+    "endpoint": {
+      "ap_dike": "project-feasability",
+      "ap_building": "project-feasability",
+      "dike": "project-feasability",
+      "building": "project-feasability",
+      "spam": "project-feasability",
+      "harbor": "project-feasability",
+      "bridge": "project-feasability",
+      "road": "project-feasability",
+      "ap_spam": "project-feasability",
+      "ap_harbor": "project-feasability",
+      "ap_bridge": "project-feasability",
+      "ap_road": "project-feasability"
+    },
+    "configPath": {
+      "ap_dike": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "ap_building": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "dike": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "building": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "spam": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "harbor": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "bridge": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "road": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "ap_spam": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "ap_harbor": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "ap_bridge": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability",
+      "ap_road": "quick-count-profiles/quick-count-outputs/calculation-results/project-feasability/project-feasability"
+    }
+  },
+  {
+    "name": "Data-Data Proyek",
+    "endpoint": {
+      "bridge": "bridge-data-summary",
+      "building": "building-data-summary",
+      "dike": "dike-data-summary",
+      "harbor": "harbor-data-summary",
+      "road": "road-data-summary",
+      "spam": "spam-data-summary",
+      "ap_bridge": "ap-bridge-data-summary",
+      "ap_building": "ap-building-data-summary",
+      "ap_dike": "ap-dike-data-summary",
+      "ap_harbor": "ap-harbor-data-summary",
+      "ap_road": "ap-road-data-summary",
+      "ap_spam": "ap-spam-data-summary"
+    },
+    "configPath": {
+      "bridge": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/bridge",
+      "building": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/building",
+      "dike": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/dike",
+      "harbor": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/harbor",
+      "road": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/road",
+      "spam": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ut/spam",
+      "ap_bridge": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/bridge",
+      "ap_building": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/building",
+      "ap_dike": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/dike",
+      "ap_harbor": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/harbor",
+      "ap_road": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/road",
+      "ap_spam": "quick-count-profiles/quick-count-outputs/calculation-results/data-summary/ap/spam"
+    }
+  }
+]

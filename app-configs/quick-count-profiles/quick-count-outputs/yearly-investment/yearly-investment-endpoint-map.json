@@ -1,0 +1,15 @@
+{
+  "ap_dike": {"endpoint": "yearly_ap_dike_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/dike"},
+  "ap_building": {"endpoint": "yearly_ap_building_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/building"},
+  "dike": {"endpoint": "yearly_dike_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/dike"},
+  "building": {"endpoint": "yearly_building_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/building"},
+
+  "spam": {"endpoint": "yearly_spam_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "harbor": {"endpoint": "yearly_harbor_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "bridge": {"endpoint": "yearly_bridge_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "road": {"endpoint": "yearly_road_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "ap_spam": {"endpoint": "yearly_ap_spam_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "ap_harbor": {"endpoint": "yearly_ap_harbor_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "ap_bridge": {"endpoint": "yearly_ap_harbor_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"},
+  "ap_road": {"endpoint": "yearly_ap_road_investment_cost_component", "configPath": "quick-count-profiles/quick-count-outputs/yearly-investment/common"}
+}

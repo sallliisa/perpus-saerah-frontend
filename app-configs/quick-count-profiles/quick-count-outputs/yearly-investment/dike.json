@@ -1,0 +1,35 @@
+{
+  "fields": [
+    "construction_cost_value",
+    "engineering_cost_value",
+    "monitoring_cost_value",
+    "unexpected_cost_value",
+    "overhead_value",
+    "ppn_value",
+    "project_cost_value",
+    "financial_fee_value",
+    "idc_value",
+    "land_value",
+    "total_investment_cost_value",
+    "loan_value",
+    "equity_value"
+  ],
+  "fieldsAlias": {
+    "year": "Year",
+    "construction_cost_value": "Biaya Konstruksi",
+    "engineering_cost_value": "Biaya Engineering (1-2% dari biaya konstruksi)",
+    "monitoring_cost_value": "Biaya Pengawasan (1.5% dari biaya konstruksi)",
+    "unexpected_cost_value": "Biaya Tidak Terduga",
+    "overhead_value": "Overhead",
+    "ppn_value": "PPN",
+    "project_cost_value": "Biaya Proyek",
+    "financial_fee_value": "Financial Fee",
+    "idc_value": "IDC",
+    "land_value": "Lahan",
+    "total_investment_cost_value": "Total Biaya Investasi",
+    "loan_value": "Loan",
+    "equity_value": "Equity"
+  },
+  "by": "year",
+  "aggregateFieldTypeValue": "currency"
+}

@@ -1,0 +1,37 @@
+{
+  "fields": [
+    "construction_cost_value",
+    "tools_value",
+    "design_value",
+    "supervision_value",
+    "escalation_value",
+    "overhead_value",
+    "ppn_value",
+    "project_cost_value",
+    "financial_fee_value",
+    "idc_value",
+    "land_value",
+    "total_investment_cost_value",
+    "loan_value",
+    "equity_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "construction_cost_value": "Biaya Konstruksi",
+    "tools_value": "Peralatan",
+    "design_value": "Design",
+    "supervision_value": "Supervisi",
+    "escalation_value": "Eskalasi",
+    "overhead_value": "Overhead",
+    "ppn_value": "PPN",
+    "project_cost_value": "Biaya Proyek",
+    "financial_fee_value": "Financial Fee",
+    "idc_value": "IDC",
+    "land_value": "Lahan",
+    "total_investment_cost_value": "Total Biaya Investasi",
+    "loan_value": "Loan",
+    "equity_value": "Equity"
+  },
+  "by": "year",
+  "aggregateFieldTypeValue": "currency"
+}

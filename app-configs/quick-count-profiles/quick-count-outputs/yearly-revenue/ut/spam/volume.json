@@ -1,0 +1,17 @@
+{
+  "fields": [
+    "year",
+    "spam_debit_value",
+    "total_volume_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "spam_debit_value": "Debit SPAM",
+    "total_volume_value": "Total"
+  },
+  "fieldsType": {
+    "spam_debit_value": { "type": "currency" },
+    "total_volume_value": { "type": "currency" }
+  },
+  "paginated": true
+}

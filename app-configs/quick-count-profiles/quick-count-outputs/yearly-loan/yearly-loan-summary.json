@@ -1,0 +1,11 @@
+{
+  "overall": [
+    {"name": "Biaya Investasi (Di luar IDC)", "formatter": "_STRFNC_(data, parse) => parse('currency', data.investment_fee_value, 'parser')_STRFNC_"},
+    {"name": "Loan", "formatter": "_STRFNC_(data, parse) => parse('currency', data.loan_value, 'parser')_STRFNC_"}
+  ],
+  "detail": [
+    {"name": "Grace Period", "formatter": "_STRFNC_(data, parse) => `${data.grace_period_value} Tahun`_STRFNC_"}, 
+    {"name": "Loan Period", "formatter": "_STRFNC_(data, parse) => `${data.loan_period_value} Tahun`_STRFNC_"}, 
+    {"name": "Installment/Year", "formatter": "_STRFNC_(data, parse) => parse('currency', data.yearly_installment_value, 'parser')_STRFNC_"}
+  ]
+}

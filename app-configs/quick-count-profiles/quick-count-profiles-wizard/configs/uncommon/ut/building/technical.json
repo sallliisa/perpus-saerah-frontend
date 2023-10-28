@@ -1,0 +1,159 @@
+{
+  "fields": [
+    "consession_period_value",
+    "construction_period_value",
+    "operational_period_value",
+    "start_construction_year_value",
+    "end_construction_year_value",
+    "start_operational_year_value",
+    "end_operational_year_value",
+    "land_area_value",
+    "office_area_value",
+    "retail_area_value",
+    "parking_area_value",
+    "building_area_value",
+    "semi_gross_office_value",
+    "semi_gross_retail_value",
+    "child_data_building_office_occupancy",
+    "child_data_building_retail_occupancy"
+  ],
+  "inputConfig": {
+    "consession_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "construction_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "operational_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "land_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "office_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "retail_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "parking_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "building_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "semi_gross_office_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "semi_gross_retail_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "child_data_building_office_occupancy": {
+      "type": "custom",
+      "componentName": "child_data_building_office_occupancy"
+    },
+    "child_data_building_retail_occupancy": {
+      "type": "custom",
+      "componentName": "child_data_building_retail_occupancy"
+    }
+  },
+  "fieldsAlias": {
+    "consession_period_value": "Masa Konsesi",
+    "construction_period_value": "Masa Konstruksi",
+    "operational_period_value": "Masa Operasional",
+    "start_construction_year_value": "Tahun Mulai Konstruksi",
+    "end_construction_year_value": "Tahun Konstruksi Berakhir",
+    "start_operational_year_value": "Tahun Mulai Operasional",
+    "end_operational_year_value": "Tahun Operasional Berakhir",
+    "land_area_value": "Luas Lahan (m2)",
+    "office_area_value": "Luas Office (m2)",
+    "retail_area_value": "Luas Retail (m2)",
+    "parking_area_value": "Luas Parkir (m2)",
+    "building_area_value": "Luas Gedung (m2)",
+    "semi_gross_office_value": "Semi Gross Office",
+    "semi_gross_retail_value": "Semi Gross Retail",
+    "child_data_building_office_occupancy": "Okupansi Office",
+    "child_data_building_retail_occupancy": "Okupansi Retail"
+  },
+  "fieldsType": {
+    "consession_period_value": {"type": "unit", "unit": " Tahun"},
+    "construction_period_value": {"type": "unit", "unit": " Tahun"},
+    "operational_period_value": {"type": "unit", "unit": " Tahun"},
+    "land_area_value": {"type": "unit", "unit": " m2"},
+    "office_area_value": {"type": "unit", "unit": " m2"},
+    "retail_area_value": {"type": "unit", "unit": " m2"},
+    "parking_area_value": {"type": "unit", "unit": " m2"},
+    "building_area_value": {"type": "unit", "unit": " m2"},
+    "semi_gross_office_value": {"type": "currency"},
+    "semi_gross_retail_value": {"type": "currency"},
+    "child_data_building_office_occupancy": {"type": "occupancy-detail"},
+    "child_data_building_retail_occupancy": {"type": "occupancy-detail"}
+  }
+}

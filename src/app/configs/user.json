@@ -1,0 +1,7 @@
+{
+    "fieldList": ["name", "email", "type"],
+    "actions": {
+        "create": false,
+        "update": false
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "fields": [
+    "irr_percentage",
+    "npv_value",
+    "payback_period_value",
+    "wacc_percentage",
+    "eligibility_percentage",
+    "irr_feasability_status",
+    "npv_feasability_status"
+  ],
+  "fieldsAlias": {
+    "irr_percentage": "IRR",
+    "npv_value": "NPV",
+    "payback_period_value": "Payback Period",
+    "wacc_percentage": "WACC",
+    "eligibility_percentage": "Standar Kelayakan Proyek",
+    "irr_feasability_status": "IRR > WACC ",
+    "npv_feasability_status": "NPV > 0"
+  },
+  "fieldsType": {
+    "npv_value": {
+      "type": "currency"
+    },
+    "irr_feasability_status": {
+      "type": "chip",
+      "variants": {
+        "feasable": {"color": "success"},
+        "not_feasable": {"color": "error"}
+      }
+    },
+    "npv_feasability_status": {
+      "type": "chip",
+      "variants": {
+        "feasable": {"color": "success"},
+        "not_feasable": {"color": "error"}
+      }
+    }
+  },
+  "fieldsFormatter": {
+    "irr_percentage": "_STRFNC_(val) => `${val}%`_STRFNC_",
+    "payback_period_value": "_STRFNC_(val) => `${val} Tahun`_STRFNC_",
+    "eligibility_percentage": "_STRFNC_(val) => `${val}%`_STRFNC_",
+    "wacc_percentage": "_STRFNC_(val) => `${val}%`_STRFNC_"
+  },
+  "fieldsParse": {
+    "irr_feasability_status": "feasability_status",
+    "npv_feasability_status": "feasability_status"
+  }
+}

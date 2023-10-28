@@ -1,0 +1,153 @@
+{
+  "fields": [
+    "S|Pendapatan",
+    "gol_1_volume_value",
+    "gol_2_volume_value",
+    "gol_3_volume_value",
+    "gol_4_volume_value",
+    "gol_5_volume_value",
+    "S|Tarif Awal",
+    "gol_1_rates_value",
+    "gol_2_rates_value",
+    "gol_3_rates_value",
+    "gol_4_rates_value",
+    "gol_5_rates_value",
+    "S|Variabel",
+    "yearly_total_day_value",
+    "lhr_increase_percentage",
+    "rates_adjustment_percentage",
+    "yearly_inflation_percentage",
+    "yearly_escalation_percentage",
+    "om_revenue_cost_percentage"
+  ],
+  "inputConfig": {
+    "rates_adjustment_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_inflation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_escalation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "om_revenue_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "gol_1_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Kendaraan"
+      }
+    },
+    "gol_2_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Kendaraan"
+      }
+    },
+    "gol_3_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Kendaraan"
+      }
+    },
+    "gol_4_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Kendaraan"
+      }
+    },
+    "gol_5_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Kendaraan"
+      }
+    },
+    "gol_1_rates_value": {
+      "type": "currency"
+    },
+    "gol_2_rates_value": {
+      "type": "currency"
+    },
+    "gol_3_rates_value": {
+      "type": "currency"
+    },
+    "gol_4_rates_value": {
+      "type": "currency"
+    },
+    "gol_5_rates_value": {
+      "type": "currency"
+    },
+    "yearly_total_day_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Hari"
+      }
+    },
+    "lhr_increase_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "rates_adjustment_percentage": "Penyesuaian tarif (per 2 Tahun)",
+    "yearly_inflation_percentage": "Inflasi/Tahun",
+    "yearly_escalation_percentage": "Ekskalasi/Tahun",
+    "om_revenue_cost_percentage": "Biaya OM terhadap revenue",
+    "gol_1_volume_value": "Jumlah kendaraan Gol 1 per hari",
+    "gol_2_volume_value": "Jumlah kendaraan Gol 2 per hari",
+    "gol_3_volume_value": "Jumlah kendaraan Gol 3 per hari",
+    "gol_4_volume_value": "Jumlah kendaraan Gol 4 per hari",
+    "gol_5_volume_value": "Jumlah kendaraan Gol 5 per hari",
+    "gol_1_rates_value": "Tarif Kendaraan Gol 1",
+    "gol_2_rates_value": "Tarif Kendaraan Gol 2",
+    "gol_3_rates_value": "Tarif Kendaraan Gol 3",
+    "gol_4_rates_value": "Tarif Kendaraan Gol 4",
+    "gol_5_rates_value": "Tarif Kendaraan Gol 5",
+    "yearly_total_day_value": "Jumlah Hari dalam setahun",
+    "lhr_increase_percentage":"Kenaikan LHR"
+  },
+  "fieldsType": {
+    "rates_adjustment_percentage": {"type": "unit", "unit": "%"},
+    "yearly_inflation_percentage": {"type": "unit", "unit": "%"},
+    "yearly_escalation_percentage": {"type": "unit", "unit": "%"},
+    "om_revenue_cost_percentage": {"type": "unit", "unit": "%"},
+    "gol_1_volume_value": {"type": "unit", "unit": " Kendaraan"},
+    "gol_2_volume_value": {"type": "unit", "unit": " Kendaraan"},
+    "gol_3_volume_value": {"type": "unit", "unit": " Kendaraan"},
+    "gol_4_volume_value": {"type": "unit", "unit": " Kendaraan"},
+    "gol_5_volume_value": {"type": "unit", "unit": " Kendaraan"},
+    "gol_1_rates_value": {"type": "currency"},
+    "gol_2_rates_value": {"type": "currency"},
+    "gol_3_rates_value": {"type": "currency"},
+    "gol_4_rates_value": {"type": "currency"},
+    "gol_5_rates_value": {"type": "currency"},
+    "yearly_total_day_value": {"type": "unit", "unit": " Hari"},
+    "lhr_increase_percentage": {"type": "unit", "unit": "%"}
+  }
+}

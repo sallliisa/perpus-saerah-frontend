@@ -1,0 +1,124 @@
+{
+   "fields":[
+      "grace_period_value",
+      "loan_period_value",
+      "cost_of_debt_percentage",
+      "corporate_tax_percentage",
+      "hk_rates_percentage",
+      "loan_percentage",
+      "equity_percentage",
+      "wacc_percentage",
+      "eligibility_percentage",
+      "post_tax_cost_of_debt_percentage",
+      "cost_of_equity_percentage"
+   ],
+   "inputConfig": {
+      "grace_period_value": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "Tahun"
+         }
+      },
+      "loan_period_value": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "Tahun"
+         }
+      },
+      "cost_of_debt_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "corporate_tax_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "hk_rates_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "loan_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "equity_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "wacc_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "eligibility_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%"
+         }
+      },
+      "post_tax_cost_of_debt_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%",
+            "disabled": true,
+            "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+         }
+      },
+      "cost_of_equity_percentage": {
+         "type": "text",
+         "props": {
+            "constraint": ["decimal"],
+            "suffix": "%",
+            "disabled": true,
+            "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+         }
+      }
+   },
+   "fieldsAlias": {
+      "grace_period_value": "Grace Period (Tahun)",
+      "loan_period_value": "Loan Period (Tahun)",
+      "cost_of_debt_percentage": "Cost of Debt (Bunga)",
+      "corporate_tax_percentage": "Corporate Tax",
+      "hk_rates_percentage": "HK Rate",
+      "loan_percentage": "Loan",
+      "equity_percentage": "Equity",
+      "wacc_percentage": "WACC",
+      "eligibility_percentage": "Toleransi Kelayakan",
+      "post_tax_cost_of_debt_percentage": "Post Tax Cost of Debt",
+      "cost_of_equity_percentage": "Cost of Equity"
+   },
+   "fieldsType": {
+      "grace_period_value": {"type": "currency"},
+      "loan_period_value": {"type": "currency"},
+      "cost_of_debt_percentage": {"type": "unit", "unit": "%"},
+      "corporate_tax_percentage": {"type": "unit", "unit": "%"},
+      "hk_rates_percentage": {"type": "unit", "unit": "%"},
+      "loan_percentage": {"type": "unit", "unit": "%"},
+      "equity_percentage": {"type": "unit", "unit": "%"},
+      "wacc_percentage": {"type": "unit", "unit": "%"},
+      "eligibility_percentage": {"type": "unit", "unit": "%"},
+      "post_tax_cost_of_debt_percentage": {"type": "unit", "unit": "%"},
+      "cost_of_equity_percentage": {"type": "unit", "unit": "%"}
+   }
+}

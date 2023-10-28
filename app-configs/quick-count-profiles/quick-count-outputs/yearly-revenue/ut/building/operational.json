@@ -1,0 +1,38 @@
+{
+  "fields": [
+    "year",
+    "payroll_value",
+    "energy_cost_value",
+    "telecomunication_value",
+    "equipment_value",
+    "other_expenses_value",
+    "management_fee_value",
+    "insurance_value",
+    "total_operational_office_cost_value",
+    "land_lease_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "payroll_value": "Payroll",
+    "energy_cost_value": "Energy Cost",
+    "telecomunication_value": "Televisi, Internet, Telephone, Fax",
+    "equipment_value": "Equipment",
+    "other_expenses_value": "Other Expenses",
+    "management_fee_value": "Management Fee",
+    "insurance_value": "Insurance",
+    "total_operational_office_cost_value": "Total",
+    "land_lease_value": "Sewa Lahan"
+  },
+  "fieldsType": {
+    "payroll_value": { "type": "currency" },
+    "energy_cost_value": { "type": "currency" },
+    "telecomunication_value": { "type": "currency" },
+    "equipment_value": { "type": "currency" },
+    "other_expenses_value": { "type": "currency" },
+    "management_fee_value": { "type": "currency" },
+    "insurance_value": { "type": "currency" },
+    "total_operational_office_cost_value": { "type": "currency" },
+    "land_lease_value": { "type": "currency" }
+  },
+  "paginated": true
+}

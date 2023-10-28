@@ -1,0 +1,85 @@
+{
+  "fields": [
+    "construction_cost_value",
+    "engineering_cost_percentage",
+    "monitoring_cost_percentage",
+    "unexpected_cost_percentage",
+    "overhead_percentage",
+    "ppn_percentage",
+    "financial_fee_percentage",
+    "land_percentage"
+  ],
+  "inputConfig": {
+    "construction_cost_value": {
+      "type": "currency"
+    },
+    "engineering_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "monitoring_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "unexpected_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "overhead_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "ppn_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "financial_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "land_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "construction_cost_value": "Biaya Konstruksi",
+    "engineering_cost_percentage": "Biaya Engineering",
+    "monitoring_cost_percentage": "Biaya Pengawasan",
+    "unexpected_cost_percentage": "Unexpected cost percentage",
+    "overhead_percentage": "Overhead",
+    "ppn_percentage": "PPN",
+    "financial_fee_percentage": "Financial Fee",
+    "land_percentage": "Lahan"
+  },
+  "fieldsType": {
+    "construction_cost_value": {"type": "currency"},
+    "engineering_cost_percentage": {"type": "unit", "unit": "%"},
+    "monitoring_cost_percentage": {"type": "unit", "unit": "%"},
+    "unexpected_cost_percentage": {"type": "unit", "unit": "%"},
+    "overhead_percentage": {"type": "unit", "unit": "%"},
+    "ppn_percentage": {"type": "unit", "unit": "%"},
+    "financial_fee_percentage": {"type": "unit", "unit": "%"}
+  }
+}

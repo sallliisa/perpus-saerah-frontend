@@ -1,0 +1,33 @@
+{
+  "fields": [
+    "span_length_value",
+    "availability_payment_value",
+    "consession_period_value",
+    "operational_period_value",
+    "loan_period_value"
+  ],
+  "fieldsAlias": {
+    "span_length_value": "Span Length",
+    "availability_payment_value": "Availability Payment",
+    "consession_period_value": "Consession Period",
+    "operational_period_value": "Operational Period",
+    "loan_period_value": "Loan Period"
+  },
+  "fieldsType": {
+    "span_length_value": {
+      "type": "currency"
+    },
+    "availability_payment_value": {
+      "type": "currency"
+    },
+    "consession_period_value": {
+      "type": "currency"
+    },
+    "operational_period_value": {
+      "type": "currency"
+    },
+    "loan_period_value": {
+      "type": "currency"
+    }
+  }
+}

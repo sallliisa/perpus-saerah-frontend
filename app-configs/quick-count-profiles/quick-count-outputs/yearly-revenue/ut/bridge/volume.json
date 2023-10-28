@@ -1,0 +1,29 @@
+{
+  "fields": [
+    "year",
+    "gol_1_value",
+    "gol_2_value",
+    "gol_3_value",
+    "gol_4_value",
+    "gol_5_value",
+    "total_volume_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "gol_1_value": "Golongan 1",
+    "gol_2_value": "Golongan 2",
+    "gol_3_value": "Golongan 3",
+    "gol_4_value": "Golongan 4",
+    "gol_5_value": "Golongan 5",
+    "total_volume_value": "Total Volume"
+  },
+  "fieldsType": {
+    "gol_1_value": { "type": "number" },
+    "gol_2_value": { "type": "number" },
+    "gol_3_value": { "type": "number" },
+    "gol_4_value": { "type": "number" },
+    "gol_5_value": { "type": "number" },
+    "total_volume_value": { "type": "number" }
+  },
+  "paginated": true
+}

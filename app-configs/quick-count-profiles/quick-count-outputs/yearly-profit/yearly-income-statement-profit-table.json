@@ -1,0 +1,58 @@
+{
+  "fields": [
+    "year",
+    "revenue_value",
+    "om_value",
+    "ebitda_value",
+    "depreciation_n_amortization_value",
+    "ebit_value",
+    "interest_value",
+    "profit_before_tax_value",
+    "tax_value",
+    "net_profit_value"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "income_statement", "colspan": 10, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"}
+    ],
+    [
+      {"id": "revenue_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "om_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "ebitda_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "depreciation_n_amortization_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "ebit_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "interest_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "profit_before_tax_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "tax_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "net_profit_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsType": {
+    "income_statement": {"type": "currency"},
+    "revenue_value": {"type": "currency"},
+    "om_value": {"type": "currency"},
+    "ebitda_value": {"type": "currency"},
+    "depreciation_n_amortization_value": {"type": "currency"},
+    "ebit_value": {"type": "currency"},
+    "interest_value": {"type": "currency"},
+    "profit_before_tax_value": {"type": "currency"},
+    "tax_value": {"type": "currency"},
+    "net_profit_value": {"type": "currency"}
+  },
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "income_statement": "Income Statement (Rp)",
+    "revenue_value": "Revenue",
+    "om_value": "OM",
+    "ebitda_value": "EBITDA",
+    "depreciation_n_amortization_value": "Depresiasi dan Amortisasi",
+    "ebit_value": "EBIT",
+    "interest_value": "Interest",
+    "profit_before_tax_value": "Profit Before Tax",
+    "tax_value": "Tax",
+    "net_profit_value": "Net Profit"
+  },
+  "getAPI": "yearly_income_statement_profit",
+  "paginated": true
+}

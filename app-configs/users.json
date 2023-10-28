@@ -1,0 +1,88 @@
+{
+    "fieldAdd": [
+        "login_method",
+        "username",
+        "password",
+        "role_id",
+        "description",
+        "active"
+    ],
+    "fieldList": [
+        "login_method",
+        "username",
+        "role_id",
+        "description",
+        "active",
+        "created_at",
+        "updated_at"
+    ],
+    "fieldsAlternateSource": {
+        "role_id": "rel_role_id"
+    },
+    "fieldsOverride": {
+        "login_method": {
+            "local":  "Lokal (Non-SSO)",
+            "sso": "SSO"
+        }
+    },
+    "inputConfig": {
+        "username": {
+            "type": "text",
+            "props": {
+                "required": true
+            },
+            "dependency": {
+                "field": "login_method",
+                "visibility": {
+                    "validator": "_STRFNC_(val) => val === 'local'_STRFNC_",
+                    "default": false
+                }
+            }
+        },
+        "password": {
+            "type": "text",
+            "props": {
+                "required": true
+            },
+            "dependency": {
+                "field": "login_method",
+                "visibility": {
+                    "validator": "_STRFNC_(val) => val === 'local'_STRFNC_",
+                    "default": false
+                }
+            }
+        },
+        "login_method": {
+            "type": "radio",
+            "props": {
+                "items": [
+                    {
+                        "id": "sso",
+                        "name": "SSO"
+                    },
+                    {
+                        "id": "local",
+                        "name": "Lokal (Non-SSO)"
+                    }
+                ],
+                "required": true,
+                "defaultToFirst": true
+            }
+        },
+        "role_id": {
+            "type": "lookup",
+            "props": {
+                "getAPI": "roles",
+                "required": true,
+                "view": "role_name"
+            }
+        }
+    },
+    "fieldsExclude": ["approval_at", "approval_by", "api_token", "employee_id"],
+    "fieldsAlias": {
+        "login_method": "Metode Login",
+        "username": "Username",
+        "password": "Password",
+        "role_id": "Role"
+    }
+}

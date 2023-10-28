@@ -1,0 +1,1 @@
+rsync -rav ./app-configs/ gamer@zzidzz.tech:~/appc.zzidzz.tech/storage/app/app-configs/qcfs/ 

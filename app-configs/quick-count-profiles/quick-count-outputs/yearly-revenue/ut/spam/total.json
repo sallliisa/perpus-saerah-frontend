@@ -1,0 +1,21 @@
+{
+  "fields": [
+    "year",
+    "revenue_value",
+    "total_revenue_value",
+    "cumulative_revenue_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "revenue_value": "Revenue",
+    "total_revenue_value": "Total",
+    "cumulative_revenue_value": "Akumulasi Pendapatan"
+  },
+  "fieldsType": {
+    "year": {"type": "currency"},
+    "revenue_value": {"type": "currency"},
+    "total_revenue_value": {"type": "currency"},
+    "cumulative_revenue_value": {"type": "currency"}
+  },
+  "paginated": true
+}

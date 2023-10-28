@@ -1,0 +1,29 @@
+{
+  "fields": [
+    "year",
+    "office_value",
+    "retail_value",
+    "service_charge_office_value",
+    "service_charge_retail_value",
+    "total_revenue_value",
+    "cumulative_revenue_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "office_value": "Office",
+    "retail_value": "Retail",
+    "service_charge_office_value": "Service Charge Office",
+    "service_charge_retail_value": "Service Charge Retail",
+    "total_revenue_value": "Total Revenue",
+    "cumulative_revenue_value": "Cumulative Revenue"
+  },
+  "fieldsType": {
+    "office_value": { "type": "currency" },
+    "retail_value": { "type": "currency" },
+    "service_charge_office_value": { "type": "currency" },
+    "service_charge_retail_value": { "type": "currency" },
+    "total_revenue_value": { "type": "currency" },
+    "cumulative_revenue_value": { "type": "currency" }
+  },
+  "paginated": true
+}

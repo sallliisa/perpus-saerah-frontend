@@ -1,0 +1,14 @@
+{
+  "fields": [
+    "year",
+    "user_rates_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "user_rates_value": "Tarif"
+  },
+  "fieldsType": {
+    "user_rates_value": { "type": "currency" }
+  },
+  "paginated": true
+}

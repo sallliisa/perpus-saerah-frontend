@@ -1,0 +1,61 @@
+{
+  "spam": [
+    {"name": "Volume Tahunan", "endpoint": "yearly_spam_volume_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/spam/volume"},
+    {"name": "Tarif (Rp/m3)", "endpoint": "yearly_spam_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/spam/rates"},
+    {"name": "Revenue (Rp)", "endpoint": "yearly_spam_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/spam/total"}
+  ],
+  "ap_spam": [
+    { "name": "Revenue (Rp)", "endpoint": "yearly_ap_spam_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ],
+
+  "harbor": [
+    {"name": "Kapasitas Pelabuhan", "endpoint": "yearly_harbor_volume_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/harbor/volume"},
+    {"name": "Tarif Golongan (Rp/m3)", "endpoint": "yearly_harbor_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/harbor/rates"},
+    {"name": "Revenue (Rp) Pendapatan", "endpoint": "yearly_harbor_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/harbor/total"}
+  ],
+  "ap_harbor": [
+    {"name": "Revenue (Rp) Pendapatan", "endpoint": "yearly_ap_harbor_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ],
+
+  "dike": [
+    {"name": "Volume Tahunan", "endpoint": "yearly_dike_volume_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/dike/volume"},
+    {"name": "Tarif (Rp/m3)", "endpoint": "yearly_dike_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/dike/rates"},
+    {"name": "Revenue (Rp)", "endpoint": "yearly_dike_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/dike/total"}
+  ],
+  "ap_dike": [
+    {"name": "Revenue (Rp)", "endpoint": "yearly_ap_dike_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ],
+
+  "building": [
+    {"name": "Luasan Bangunan", "endpoint": "yearly_building_area_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/area"},
+    {"name": "Okupansi", "endpoint": "yearly_building_occupancy_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/occupancy"},
+    {"name": "Tarif (Rp/m3)", "endpoint": "yearly_building_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/rates"},
+    {"name": "Biaya Building Management", "endpoint": "yearly_building_management_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/management"},
+    {"name": "Biaya Operasional", "endpoint": "yearly_building_operational_office_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/operational"},
+    {"name": "Revenue (Rp)", "endpoint": "yearly_building_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/building/total"}
+  ],
+  "ap_building": [
+    {"name": "Occupancy Revenue", "endpoint": "yearly_ap_building_occupancy_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/building/occupancy"},
+    {"name": "Management Revenue", "endpoint": "yearly_ap_building_management_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/building/management"},
+    {"name": "Biaya Operasional", "endpoint": "yearly_ap_building_operational_office_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/building/operational"},
+    {"name": "Revenue (Rp)", "endpoint": "yearly_ap_building_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ],
+
+  "bridge": [
+    {"name": "Volume Tahunan", "endpoint": "yearly_bridge_volume_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/bridge/volume"},
+    {"name": "Tarif (Rp/m3)", "endpoint": "yearly_bridge_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/bridge/rates"},
+    {"name": "Revenue (Rp)", "endpoint": "yearly_bridge_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/bridge/total"}
+  ],
+  "ap_bridge": [
+    {"name": "Revenue (Rp)", "endpoint": "yearly_ap_bridge_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ],
+  
+  "road": [
+    {"name": "Volume Kendaraan Tahunan", "endpoint": "yearly_road_volume_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/road/volume"},
+    {"name": "Tarif Golongan (Rp/m3)", "endpoint": "yearly_road_rates_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/road/rates"},
+    {"name": "Revenue Pendapatan", "endpoint": "yearly_road_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ut/road/total"}
+  ],
+  "ap_road": [
+    {"name": "Revenue Pendapatan", "endpoint": "yearly_ap_road_revenue", "configPath": "quick-count-profiles/quick-count-outputs/yearly-revenue/ap/common/total-revenue"}
+  ]
+}

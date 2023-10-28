@@ -1,0 +1,127 @@
+{
+  "fields": [
+    "dike_capacity_value",
+    "irigation_area_value",
+    "palawija_area_value",
+    "raw_water_volume_value",
+    "total_electrical_energy_value",
+    "consession_period_value",
+    "construction_period_value",
+    "operational_period_value",
+    "start_construction_year_value",
+    "end_construction_year_value",
+    "start_operational_year_value",
+    "end_operational_year_value"
+  ],
+  "inputConfig": {
+    "dike_capacity_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "irigation_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "palawija_area_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "raw_water_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "total_electrical_energy_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "suffix": "kwh",
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "consession_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "construction_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "operational_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "dike_capacity_value": "Kapasitas Bendungan (Jt m3)",
+    "irigation_area_value": "Irigasi (Ha)",
+    "palawija_area_value": "Palawija (Ha)",
+    "raw_water_volume_value": "Air Baku (Liter)",
+    "total_electrical_energy_value": "Energy Listrik (Kwh)",
+    "consession_period_value": "Masa Konsesi",
+    "construction_period_value": "Masa Konstruksi",
+    "operational_period_value": "Masa Operasional",
+    "start_construction_year_value": "Tahun Mulai Konstruksi",
+    "end_construction_year_value": "Tahun Konstruksi Berakhir",
+    "start_operational_year_value": "Tahun Mulai Operasional",
+    "end_operational_year_value": "Tahun Operasional Berakhir"
+  },
+  "fieldsType": {
+    "dike_capacity_value": {"type": "unit", "unit": " Jt m3"},
+    "irigation_area_value": {"type": "unit", "unit": " Ha"},
+    "palawija_area_value": {"type": "unit", "unit": " Ha"},
+    "raw_water_volume_value": {"type": "unit", "unit": " Liter"},
+    "total_electrical_energy_value": {"type": "unit", "unit": " Kwh"}
+  }
+}

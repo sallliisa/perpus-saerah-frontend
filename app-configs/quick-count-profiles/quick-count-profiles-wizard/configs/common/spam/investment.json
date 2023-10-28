@@ -1,0 +1,92 @@
+{
+  "fields": [
+    "pipe_distribution_cost_value",
+    "water_production_cost_value",
+    "tools_percentage",
+    "design_percentage",
+    "supervision_percentage",
+    "overhead_percentage",
+    "ppn_percentage",
+    "financial_fee_percentage",
+    "land_percentage"
+  ],
+  "inputConfig": {
+    "pipe_distribution_cost_value": {
+      "type": "currency"
+    },
+    "water_production_cost_value": {
+      "type": "currency"
+    },
+    "tools_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "design_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "supervision_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "overhead_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "ppn_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "financial_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "land_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "pipe_distribution_cost_value": "Biaya Distribusi Pipa per KM",
+    "water_production_cost_value": "Biaya Produksi Air per Ltr/detik",
+    "tools_percentage": "Peralatan",
+    "design_percentage": "Design",
+    "supervision_percentage": "Supervisi",
+    "overhead_percentage": "Overhead",
+    "ppn_percentage": "PPN",
+    "financial_fee_percentage": "Financial Fee",
+    "land_percentage": "Lahan"
+  },
+  "fieldsType": {
+    "pipe_distribution_cost_value": {"type": "currency"},
+    "water_production_cost_value": {"type": "currency"},
+    "tools_percentage": {"type": "unit", "unit": "%"},
+    "design_percentage": {"type": "unit", "unit": "%"},
+    "supervision_percentage": {"type": "unit", "unit": "%"},
+    "overhead_percentage": {"type": "unit", "unit": "%"},
+    "ppn_percentage": {"type": "unit", "unit": "%"},
+    "financial_fee_percentage": {"type": "unit", "unit": "%"},
+    "land_percentage": {"type": "unit", "unit": "%"}
+  }
+}

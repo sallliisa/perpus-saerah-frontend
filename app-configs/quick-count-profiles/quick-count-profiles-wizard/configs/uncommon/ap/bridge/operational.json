@@ -1,0 +1,40 @@
+{
+  "fields": [
+    "availability_payment_value",
+    "yearly_inflation_percentage",
+    "yearly_escalation_percentage",
+    "om_revenue_cost_percentage"
+  ],
+  "inputConfig": {
+    "availability_payment_value": {
+      "type": "currency"
+    },
+    "yearly_inflation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_escalation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "om_revenue_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "availability_payment_value": "Availability Payment",
+    "yearly_inflation_percentage": "Inflasi/Tahun",
+    "yearly_escalation_percentage": "Ekskalasi/Tahun",
+    "om_revenue_cost_percentage": "Biaya OM Terhadap Revenue"
+  }
+}

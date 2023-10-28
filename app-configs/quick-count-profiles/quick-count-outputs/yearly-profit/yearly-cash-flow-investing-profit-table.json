@@ -1,0 +1,29 @@
+{
+  "fields": [
+    "year",
+    "investment_cost_value",
+    "cash_flow_from_investing_value"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "cash_out", "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "cash_flow_from_investing_value", "rowspan": 2, "class": "p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"}
+    ],
+    [
+      {"id": "investment_cost_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsType": {
+    "investment_cost_value": {"type": "currency"},
+    "cash_flow_from_investing_value": {"type": "currency"}
+  },
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "investment_cost_value": "Investment",
+    "cash_flow_from_investing_value": "Cash Flow From Investing",
+    "cash_out": "Cash Out"
+  },
+  "getAPI": "yearly_cash_flow_investing_profit",
+  "paginated": true
+}

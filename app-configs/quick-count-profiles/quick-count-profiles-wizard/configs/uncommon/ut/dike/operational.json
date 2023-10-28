@@ -1,0 +1,86 @@
+{
+  "fields": [
+    "rates_adjustment_percentage",
+    "yearly_inflation_percentage",
+    "yearly_escalation_percentage",
+    "om_revenue_cost_percentage",
+    "irigation_rates_value",
+    "palawija_rates_value",
+    "raw_water_rates_value",
+    "electrical_energy_value"
+  ],
+  "inputConfig": {
+    "rates_adjustment_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_inflation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_escalation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "om_revenue_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "irigation_rates_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "palawija_rates_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "raw_water_rates_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "electrical_energy_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    }
+  },
+  "fieldsAlias": {
+    "rates_adjustment_percentage": "Penyesuaian Tarif (Per 2 Tahun)",
+    "yearly_inflation_percentage": "Inflasi/Tahun",
+    "yearly_escalation_percentage": "Eskalasi/Tahun",
+    "om_revenue_cost_percentage": "Biaya OM Terhadap Revenue",
+    "irigation_rates_value": "Irigation (Ha)",
+    "palawija_rates_value": "Palawija (Ha)",
+    "raw_water_rates_value": "Air Baku (Liter)",
+    "electrical_energy_value": "Energi Listrik (Kwh)"
+  },
+  "fieldsType": {
+    "rates_adjustment_percentage": {"type": "unit", "unit": "%"},
+    "yearly_inflation_percentage": {"type": "unit", "unit": "%"},
+    "yearly_escalation_percentage": {"type": "unit", "unit": "%"},
+    "om_revenue_cost_percentage": {"type": "unit", "unit": "%"},
+    "irigation_rates_value": {"type": "unit", "unit": "Ha"},
+    "palawija_rates_value": {"type": "unit", "unit": "Ha"},
+    "raw_water_rates_value": {"type": "unit", "unit": "Liter"},
+    "electrical_energy_value": {"type": "unit", "unit": "Kwh"}
+  }
+}

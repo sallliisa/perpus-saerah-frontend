@@ -1,0 +1,79 @@
+{
+  "bridge": [
+    {"name": "Aspek Teknis", "endpoint": "bridge-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/bridge/technical"},
+    {"name": "Aspek Operasional", "endpoint": "bridge-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/bridge/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "bridge-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/bridge/investment"}
+  ],
+  "ap_bridge": [
+    {"name": "Aspek Teknis", "endpoint": "ap-bridge-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/bridge/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-bridge-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/bridge/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-bridge-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/bridge/investment"}
+  ],
+
+  "building": [
+    {"name": "Aspek Teknis", "endpoint": "building-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/building/technical"},
+    {"name": "Aspek Operasional", "endpoint": "building-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/building/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "building-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/building/investment"}
+  ],
+  "ap_building": [
+    {"name": "Aspek Teknis", "endpoint": "ap-building-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/building/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-building-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/building/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-building-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/building/investment"}
+  ],
+
+  "dike": [
+    {"name": "Aspek Teknis", "endpoint": "dike-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/dike/technical"},
+    {"name": "Aspek Operasional", "endpoint": "dike-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/dike/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "dike-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/dike/investment"}
+  ],
+  "ap_dike": [
+    {"name": "Aspek Teknis", "endpoint": "ap-dike-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/dike/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-dike-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/dike/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-dike-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/dike/investment"}
+  ],
+
+  "harbor": [
+    {"name": "Aspek Teknis", "endpoint": "harbor-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/harbor/technical"},
+    {"name": "Aspek Operasional", "endpoint": "harbor-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/harbor/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "harbor-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/harbor/investment"}
+  ],
+  "ap_harbor": [
+    {"name": "Aspek Teknis", "endpoint": "ap-harbor-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/harbor/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-harbor-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/harbor/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-harbor-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/harbor/investment"}
+  ],
+
+  "road": [
+    {"name": "Aspek Teknis", "endpoint": "road-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/road/technical"},
+    {"name": "Aspek Operasional", "endpoint": "road-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/road/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "road-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/road/investment"}
+  ],
+  "ap_road": [
+    {"name": "Aspek Teknis", "endpoint": "ap-road-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/road/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-road-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/road/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-road-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/road/investment"}
+  ],
+
+  "spam": [
+    {"name": "Aspek Teknis", "endpoint": "spam-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/spam/technical"},
+    {"name": "Aspek Operasional", "endpoint": "spam-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ut/spam/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "spam-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/spam/investment"}
+  ],
+  "ap_spam": [
+    {"name": "Aspek Teknis", "endpoint": "ap-spam-technical-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/spam/technical"},
+    {"name": "Aspek Operasional", "endpoint": "ap-spam-operational-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/uncommon/ap/spam/operational"},
+    {"name": "Aspek Keuangan", "endpoint": "financial-aspect", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/common/financial"},
+    {"name": "Komponen Biaya Investasi", "endpoint": "ap-spam-investment-cost-component", "configPath": "quick-count-profiles/quick-count-profiles-wizard/configs/common/spam/investment"}
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "fields": [
+    "year",
+    "irigation_value",
+    "palawija_value",
+    "raw_water_value",
+    "electrical_energy_value",
+    "total_revenue_value",
+    "cumulative_revenue_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "irigation_value": "Irigasi",
+    "palawija_value": "Palawija",
+    "raw_water_value": "Air Baku",
+    "electrical_energy_value": "Energi Listrik",
+    "total_revenue_value": "Total",
+    "cumulative_revenue_value": "Akumulasi Pendapatan"
+  },
+  "fieldsType": {
+    "irigation_value": { "type": "currency" },
+    "palawija_value": { "type": "currency" },
+    "raw_water_value": { "type": "currency" },
+    "electrical_energy_value": { "type": "currency" },
+    "total_revenue_value": { "type": "currency" },
+    "cumulative_revenue_value": { "type": "currency" }
+  },
+  "paginated": true
+}

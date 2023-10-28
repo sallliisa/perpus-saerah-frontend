@@ -1,0 +1,56 @@
+{
+    "fieldAdd": [
+        "fullname",
+        "gender",
+        "email",
+        "phone",
+        "img_photo_user",
+        "description",
+        "active"
+    ],
+    "fieldsType": {
+        "img_photo_user": {
+            "type": "image"
+        }
+    },
+    "fieldsAlias": {
+        "fullname": "Nama",
+        "gender": "Jenis Kelamin",
+        "email": "Email",
+        "phone": "Nomor Telepon",
+        "img_photo_user": "Foto"
+    },
+    "inputConfig": {
+        "fullname": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "gender": {
+            "type": "radio",
+            "props": {
+                "required": true,
+                "items": [
+                    {"id": "male", "name": "Laki-laki"},
+                    {"id": "female", "name": "Perempuan"}
+                ]
+            }
+        },
+        "email": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "phone": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "img_photo_user": {
+            "type": "image"
+        }
+    }
+}

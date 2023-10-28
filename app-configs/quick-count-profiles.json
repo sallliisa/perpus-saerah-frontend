@@ -1,0 +1,88 @@
+{
+    "fieldAdd": [
+        "name",
+        "payment_type_code",
+        "construction_type_code",
+        "array_tags",
+        "description"
+    ],
+    "fieldEdit": [
+        "name",
+        "array_tags",
+        "description"
+    ],
+    "inputConfig": {
+        "payment_type_code": {
+            "type": "radio",
+            "props": {
+                "required": true,
+                "getAPI": "payment-types",
+                "pick": "code"
+            }
+        },
+        "construction_type_code": {
+            "type": "radio",
+            "props": {
+                "required": true,
+                "getAPI": "construction-types",
+                "pick": "code"
+            },
+            "dependency": {
+                "field": "payment_type_code",
+                "visibility": {
+                    "validator": "_STRFNC_(val) => !!val_STRFNC_",
+                    "default": false
+                },
+                "props": {
+                    "generator": "_STRFNC_(val) => {return {getQueryParameters: {payment_type_code: val}}}_STRFNC_"
+                }
+            }
+        },
+        "array_tags": {
+            "type": "tag"
+        }
+    },
+    "fieldsAlias": {
+        "name": "Nama Profil Proyek",
+        "construction_type_code": "Tipe Konstruksi",
+        "payment_type_code": "Tipe Pembayaran",
+        "array_tags": "Kata Kunci",
+        "is_draft": "Status"
+    },
+    "fieldsType": {
+        "array_tags": {"type": "chip-list"},
+        "is_draft": {
+            "type": "chip",
+            "variants": {
+                "true": {"color": "warning"},
+                "false": {"color": "success"}
+            }
+        }
+    },
+    "fieldsOverride": {
+        "is_draft": {
+            "true": "Draft",
+            "false": "Dihitung"
+        }
+    }, 
+    "fieldsAlternateSource": {
+        "construction_type_code": "rel_construction_type_code_name",
+        "payment_type_code": "rel_payment_type_code_name"
+    },
+    "fieldList": [
+        "name",
+        "construction_type_code",
+        "payment_type_code",
+        "is_draft",
+        "array_tags",
+        "created_at",
+        "updated_at"
+    ],
+    "fieldShow": [
+        "name",
+        "construction_type_code",
+        "payment_type_code",
+        "array_tags",
+        "description"
+    ]
+}

@@ -1,0 +1,90 @@
+{
+  "fields": [
+    "road_length_value",
+    "consession_period_value",
+    "construction_period_value",
+    "operational_period_value",
+    "start_construction_year_value",
+    "end_construction_year_value",
+    "start_operational_year_value",
+    "end_operational_year_value"
+  ],
+  "inputConfig": {
+    "road_length_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "consession_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "construction_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "operational_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "road_length_value": "Panjang Jalan",
+    "consession_period_value": "Masa Konsesi",
+    "construction_period_value": "Masa Konstruksi",
+    "operational_period_value": "Masa Operasional",
+    "start_construction_year_value": "Tahun Mulai Konstruksi",
+    "end_construction_year_value": "Tahun Konstruksi Berakhir",
+    "start_operational_year_value": "Tahun Mulai Operasional",
+    "end_operational_year_value": "Tahun Operasional Berakhir"
+  },
+  "fieldsType": {
+    "road_length_value": {"type": "unit", "unit": " KM"},
+    "consession_period_value": {"type": "unit", "unit": " Tahun"},
+    "construction_period_value": {"type": "unit", "unit": " Tahun"}
+  }
+}

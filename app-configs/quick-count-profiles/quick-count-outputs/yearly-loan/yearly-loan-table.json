@@ -1,0 +1,37 @@
+{
+  "fields": [
+    "year",
+    "beginning_balance_value",
+    "interest_value",
+    "principle_value",
+    "ending_balance_value"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "p-2"},
+      {"id": "category", "colspan": 4, "class": "text-center p-2"}
+    ],
+    [
+      {"id": "beginning_balance_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "interest_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "principle_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "ending_balance_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsAlias": {
+    "year": "Tahun",
+    "category": "Kategori",
+    "beginning_balance_value": "Beginning Balance",
+    "interest_value": "Interest",
+    "principle_value": "Principle",
+    "ending_balance_value": "Ending Balance"
+  },
+  "getAPI": "yearly-loan",
+  "paginated": true,
+  "fieldsType": {
+    "beginning_balance_value": {"type": "currency"},
+    "interest_value": {"type": "currency"},
+    "principle_value": {"type": "currency"},
+    "ending_balance_value": {"type": "currency"}
+  }
+}

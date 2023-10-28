@@ -1,0 +1,23 @@
+{
+  "fields": [
+    "year",
+    "irigation_value",
+    "palawija_value",
+    "raw_water_value",
+    "electrical_energy_value"
+  ],
+  "fieldsAlias": {
+    "year": "Year",
+    "irigation_value": "Irigasi",
+    "palawija_value": "Palawija",
+    "raw_water_value": "Air Baku",
+    "electrical_energy_value": "Energi Listrik"
+  },
+  "fieldsType": {
+    "irigation_value": { "type": "currency" },
+    "palawija_value": { "type": "currency" },
+    "raw_water_value": { "type": "currency" },
+    "electrical_energy_value": { "type": "currency" }
+  },
+  "paginated": true
+}

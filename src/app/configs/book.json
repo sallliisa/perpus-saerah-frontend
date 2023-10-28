@@ -1,0 +1,66 @@
+{
+    "fieldList": ["name", "category_id", "author", "publisher", "img_photo", "stock", "created_at", "updated_at"],
+    "fieldAdd": ["name", "isbn", "author", "publisher", "publishing_city", "editor", "img_photo", "category_id", "stock", "active"],
+    "fieldShow": ["name", "isbn", "author", "publisher", "publishing_city", "editor", "img_photo", "category_id", "stock", "active", "created_at", "updated_at"],
+    "fieldsAlias": {
+        "name": "Judul"
+    },
+    "fieldsAlternateSource": {
+        "category_id": "category_name"
+    },
+    "fieldsType": {
+        "img_photo": {"type": "image"}
+    },
+    "inputConfig": {
+        "isbn": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "author": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "publisher": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "publishing_city": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "editor": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "img_photo": {
+            "type": "image",
+            "props": {
+                "required": true
+            }
+        },
+        "category_id": {
+            "type": "lookup",
+            "props": {
+                "required": true,
+                "getAPI": "category"
+            }
+        },
+        "stock": {
+            "type": "text",
+            "props": {
+                "required": true,
+                "constraint": ["integer"]
+            }
+        }
+    }
+}

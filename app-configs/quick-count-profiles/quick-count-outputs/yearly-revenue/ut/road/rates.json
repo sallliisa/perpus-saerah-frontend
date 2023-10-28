@@ -1,0 +1,24 @@
+{
+  "fields": [
+    "gol_1_value",
+    "gol_2_value",
+    "gol_3_value",
+    "gol_4_value",
+    "gol_5_value"
+  ],
+  "fieldsAlias": {
+    "gol_1_value": "Golongan 1",
+    "gol_2_value": "Golongan 2",
+    "gol_3_value": "Golongan 3",
+    "gol_4_value": "Golongan 4",
+    "gol_5_value": "Golongan 5"
+  },
+  "fieldsType": {
+    "gol_1_value": { "type": "currency" },
+    "gol_2_value": { "type": "currency" },
+    "gol_3_value": { "type": "currency" },
+    "gol_4_value": { "type": "currency" },
+    "gol_5_value": { "type": "currency" }
+  },
+  "paginated": true
+}

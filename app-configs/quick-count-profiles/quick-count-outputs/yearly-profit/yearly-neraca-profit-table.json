@@ -1,0 +1,65 @@
+{
+  "fields": [
+    "year",
+    "kas_akhir",
+    "fixed_activa_value",
+    "accumulated_depreciation_value",
+    "total_activa_value",
+    "long_term_debt_value",
+    "equity_value",
+    "current_year_profit_value",
+    "retained_profit_value",
+    "total_liabilities_n_capital_value",
+    "balance_check_value"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "neraca_activa", "colspan": 4, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "neraca_kewajiban", "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "neraca_modal", "colspan": 5, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"}
+    ],
+    [
+      {"id": "kas_akhir", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "fixed_activa_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "accumulated_depreciation_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "total_activa_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "long_term_debt_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "equity_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "current_year_profit_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "retained_profit_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "total_liabilities_n_capital_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "balance_check_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsType": {
+    "kas_akhir": {"type": "currency"},
+    "fixed_activa_value": {"type": "currency"},
+    "accumulated_depreciation_value": {"type": "currency"},
+    "total_activa_value": {"type": "currency"},
+    "long_term_debt_value": {"type": "currency"},
+    "equity_value": {"type": "currency"},
+    "current_year_profit_value": {"type": "currency"},
+    "retained_profit_value": {"type": "currency"},
+    "total_liabilities_n_capital_value": {"type": "currency"},
+    "balance_check_value": {"type": "currency"}
+  },
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "kas_akhir": "Kas",
+    "fixed_activa_value": "Aktiva Tetap",
+    "accumulated_depreciation_value": "Akumulasi Penyusutan",
+    "total_activa_value": "Total Aktiva",
+    "long_term_debt_value": "Hutang Jangka Panjang",
+    "equity_value": "Ekuitas",
+    "current_year_profit_value": "Laba Tahun Berjalan",
+    "retained_profit_value": "Laba Ditahan",
+    "total_liabilities_n_capital_value": "Total Kewajiban dan Modal",
+    "balance_check_value": "Balance Check",
+    "neraca_activa": "Neraca (Aktiva)",
+    "neraca_kewajiban": "Neraca (Kewajiban)",
+    "neraca_modal": "Neraca (Modal)"
+  },
+  "getAPI": "yearly_neraca_profit",
+  "paginated": true
+}

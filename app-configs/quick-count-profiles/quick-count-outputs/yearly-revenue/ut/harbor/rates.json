@@ -1,0 +1,17 @@
+{
+  "fields": [
+    "year",
+    "terminal_dock_value",
+    "harbor_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "terminal_dock_value": "Pendapatan Jasa Terminal dan Dermaga",
+    "harbor_value": "Pendapatan Jasa Pelabuhan"
+  },
+  "fieldsType": {
+    "terminal_dock_value": { "type": "currency" },
+    "harbor_value": { "type": "currency" }
+  },
+  "paginated": true
+}

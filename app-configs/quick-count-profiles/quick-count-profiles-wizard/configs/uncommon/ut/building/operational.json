@@ -1,0 +1,254 @@
+{
+  "fields": [
+    "S|Pendapatan",
+    "yearly_inflation_percentage",
+    "yearly_escalation_percentage",
+    "office_rates_value",
+    "retail_rent_rates_value",
+    "service_charge_office_rates_value",
+    "service_charge_retail_rates_value",
+    "space_rent_increase_percentage",
+    "yearly_total_month_value",
+    "land_value_increase_percentage",
+    "S|Biaya Operasional Office",
+    "operational_office_payroll_value",
+    "operational_office_energy_cost_percentage",
+    "operational_office_telecomunication_percentage",
+    "operational_office_equipment_percentage",
+    "operational_office_other_expenses_percentage",
+    "operational_office_management_fee_percentage",
+    "operational_office_insurance_percentage",
+    "S|Biaya BM",
+    "bm_payroll_value",
+    "bm_energy_cost_percentage",
+    "bm_telecomunication_percentage",
+    "bm_equipment_percentage",
+    "bm_other_expenses_percentage",
+    "bm_management_fee_percentage",
+    "bm_insurance_percentage",
+    "bm_maintenance_percentage",
+    "bm_land_rent_percentage",
+    "bm_ffe_percentage"
+  ],
+  "inputConfig": {
+    "yearly_inflation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_escalation_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "office_rates_value": {
+      "type": "currency"
+    },
+    "retail_rent_rates_value": {
+      "type": "currency"
+    },
+    "service_charge_office_rates_value": {
+      "type": "currency"
+    },
+    "service_charge_retail_rates_value": {
+      "type": "currency"
+    },
+    "space_rent_increase_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "yearly_total_month_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "land_value_increase_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_payroll_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "operational_office_energy_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_telecomunication_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_equipment_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_other_expenses_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_management_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "operational_office_insurance_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_payroll_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "bm_energy_cost_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_telecomunication_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_equipment_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_other_expenses_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_management_fee_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_insurance_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_maintenance_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_land_rent_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    },
+    "bm_ffe_percentage": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "%"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "yearly_inflation_percentage": "Inflasi/Tahun",
+    "yearly_escalation_percentage": "Ekskalasi/Tahun",
+    "office_rates_value": "Tarif Office (Rp m2/bln)",
+    "retail_rent_rates_value": "Sewa Retail (Rp m2/bln)",
+    "service_charge_office_rates_value": "Service Charge Office (Rp m2/bln)",
+    "service_charge_retail_rates_value": "Service Charge Retail (Rp m2/bln)",
+    "space_rent_increase_percentage": "Kenaikan Sewa Ruang",
+    "yearly_total_month_value": "Jumlah Bulan Dalam Setahun",
+    "land_value_increase_percentage": "Kenaikan Nilai Lahan",
+    "operational_office_payroll_value": "Payroll (Rp Juta/bln)",
+    "operational_office_energy_cost_percentage": "Energy Cost",
+    "operational_office_telecomunication_percentage": "Telekomunikasi (Televisi, Internet, Telepon, Fax)",
+    "operational_office_equipment_percentage": "Perlengkapan Kantor",
+    "operational_office_other_expenses_percentage": "Other Expenses",
+    "operational_office_management_fee_percentage": "Manajemen Fee",
+    "operational_office_insurance_percentage": "Insurance",
+    "bm_payroll_value": "Payroll",
+    "bm_energy_cost_percentage": "Energy Cost",
+    "bm_telecomunication_percentage": "Telekomunikasi (Televisi, Internet, Telepon, Fax)",
+    "bm_equipment_percentage": "Perlengkapan Kantor",
+    "bm_other_expenses_percentage": "Other Expenses",
+    "bm_management_fee_percentage": "Manajemen Fee",
+    "bm_insurance_percentage": "Insurance",
+    "bm_maintenance_percentage": "Maintenance",
+    "bm_land_rent_percentage": "Sewa Lahan",
+    "bm_ffe_percentage": "FEE"
+  },
+  "fieldsType": {
+    "yearly_inflation_percentage": {"type": "unit", "unit": "%"},
+    "yearly_escalation_percentage": {"type": "unit", "unit": "%"},
+    "office_rates_value": {"type": "currency"},
+    "retail_rent_rates_value": {"type": "currency"},
+    "service_charge_office_rates_value": {"type": "currency"},
+    "service_charge_retail_rates_value": {"type": "currency"},
+    "space_rent_increase_percentage": {"type": "unit", "unit": "%"},
+    "yearly_total_month_value": {"type": "currency"},
+    "land_value_increase_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_payroll_value": {"type": "currency"},
+    "operational_office_energy_cost_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_telecomunication_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_equipment_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_other_expenses_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_management_fee_percentage": {"type": "unit", "unit": "%"},
+    "operational_office_insurance_percentage": {"type": "unit", "unit": "%"},
+    "bm_payroll_value": {"type": "currency"},
+    "bm_energy_cost_percentage": {"type": "unit", "unit": "%"},
+    "bm_telecomunication_percentage": {"type": "unit", "unit": "%"},
+    "bm_equipment_percentage": {"type": "unit", "unit": "%"},
+    "bm_other_expenses_percentage": {"type": "unit", "unit": "%"},
+    "bm_management_fee_percentage": {"type": "unit", "unit": "%"},
+    "bm_insurance_percentage": {"type": "unit", "unit": "%"},
+    "bm_maintenance_percentage": {"type": "unit", "unit": "%"},
+    "bm_land_rent_percentage": {"type": "unit", "unit": "%"},
+    "bm_ffe_percentage": {"type": "unit", "unit": "%"}
+  }
+}

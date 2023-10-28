@@ -1,0 +1,17 @@
+{
+  "fields": [
+    "year",
+    "office_value",
+    "retail_value"
+  ],
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "office_value": "Office",
+    "retail_value": "Retail"
+  },
+  "fieldsType": {
+    "office_value": { "type": "unit", "unit": "%" },
+    "retail_value": { "type": "unit", "unit": "%" }
+  },
+  "paginated": true
+}

@@ -1,0 +1,59 @@
+{
+  "fields": [
+    "road_length_value",
+    "gol_1_rates_value",
+    "availability_payment_value",
+    "lhr_increase_percentage",
+    "rates_adjustment_percentage",
+    "yearly_inflation_percentage",
+    "consession_period_value",
+    "operational_period_value",
+    "loan_period_value"
+  ],
+  "fieldsAlias": {
+    "road_length_value": "Road Length",
+    "gol_1_rates_value": "Gol 1 Rates",
+    "availability_payment_value": "Availability Payment",
+    "lhr_increase_percentage": "Lhr Increase",
+    "rates_adjustment_percentage": "Rates Adjustment",
+    "yearly_inflation_percentage": "Yearly Inflation",
+    "consession_period_value": "Consession Period",
+    "operational_period_value": "Operational Period",
+    "loan_period_value": "Loan Period"
+  },
+  "fieldsType": {
+    "road_length_value": {
+      "type": "currency"
+    },
+    "gol_1_rates_value": {
+      "type": "currency"
+    },
+    "availability_payment_value": {
+      "type": "currency"
+    },
+    "lhr_increase_percentage": {
+      "type": "unit",
+      "unit": "%"
+    },
+    "rates_adjustment_percentage": {
+      "type": "unit",
+      "unit": "%"
+    },
+    "yearly_inflation_percentage": {
+      "type": "unit",
+      "unit": "%"
+    },
+    "consession_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    },
+    "operational_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    },
+    "loan_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    }
+  }
+}

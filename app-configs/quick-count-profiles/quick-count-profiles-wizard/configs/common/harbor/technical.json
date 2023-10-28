@@ -1,0 +1,127 @@
+{
+  "fields": [
+    "ship_draft_value",
+    "dredging_volume_value",
+    "dock_volume_value",
+    "harbor_facility_volume_value",
+    "tools_volume_value",
+    "consession_period_value",
+    "construction_period_value",
+    "operational_period_value",
+    "start_construction_year_value",
+    "end_construction_year_value",
+    "start_operational_year_value",
+    "end_operational_year_value"
+  ],
+  "inputConfig": {
+    "ship_draft_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "dredging_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "dock_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "harbor_facility_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "tools_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "consession_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "construction_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+    "operational_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "ship_draft_value": "Draft Kapal (m)",
+    "dredging_volume_value": "Volume Pengerukan (m3)",
+    "dock_volume_value": "Volume Dermaga (m2)",
+    "harbor_facility_volume_value": "Volume Fasilitas Pelabuhan (m2)",
+    "tools_volume_value": "Volume Peralatan (Unit)",
+    "consession_period_value": "Masa Konsesi (Tahun)",
+    "construction_period_value": "Masa Konstruksi (Tahun)",
+    "operational_period_value": "Masa Operasional (Tahun)",
+    "start_construction_year_value": "Tahun Mulai Konstruksi",
+    "end_construction_year_value": "Tahun Konstruksi Berakhir",
+    "start_operational_year_value": "Tahun Mulai Operasional",
+    "end_operational_year_value": "Tahun Operasional Berakhir"
+  },
+  "fieldsType": {
+    "ship_draft_value": {"type": "unit", "unit": " m"},
+    "dredging_volume_value": {"type": "unit", "unit": " m3"},
+    "dock_volume_value": {"type": "unit", "unit": " m2"},
+    "harbor_facility_volume_value": {"type": "unit", "unit": " m2"},
+    "tools_volume_value": {"type": "unit", "unit": " Unit"},
+    "consession_period_value": {"type": "unit", "unit": " Tahun"},
+    "construction_period_value": {"type": "unit", "unit": " Tahun"},
+    "operational_period_value": {"type": "unit", "unit": " Tahun"}
+  }
+}

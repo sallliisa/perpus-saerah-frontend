@@ -1,0 +1,43 @@
+{
+  "fields": [
+    "total_investment_cost_value",
+    "total_loan_value",
+    "total_capital_value",
+    "total_hk_value",
+    "portion_percentage",
+    "total_revenue_value",
+    "total_om_value"
+  ],
+  "fieldsAlias": {
+    "total_investment_cost_value": "Biaya Investasi",
+    "total_loan_value": "Biaya Pinjaman",
+    "total_capital_value": "Biaya Modal",
+    "total_hk_value": "Biaya HK",
+    "portion_percentage": "Porsi",
+    "total_revenue_value": "Total Pendapatan",
+    "total_om_value": "Total Biaya OM"
+  },
+  "fieldsType": {
+    "total_investment_cost_value": {
+      "type": "currency"
+    },
+    "total_loan_value": {
+      "type": "currency"
+    },
+    "total_capital_value": {
+      "type": "currency"
+    },
+    "total_hk_value": {
+      "type": "currency"
+    },
+    "total_revenue_value": {
+      "type": "currency"
+    },
+    "total_om_value": {
+      "type": "currency"
+    }
+  },
+  "fieldsFormatter": {
+    "portion_percentage": "_STRFNC_(val) => `${val}%`_STRFNC_"
+  }
+}

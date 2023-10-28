@@ -1,0 +1,124 @@
+{
+  "fields": [
+      "spam_debit_value",
+      "water_distribution_length_value",
+      "daily_volume_value",
+      "yearly_volume_value",
+      "consession_period_value",
+      "construction_period_value",
+      "operational_period_value",
+      "start_construction_year_value",
+      "end_construction_year_value",
+      "start_operational_year_value",
+      "end_operational_year_value"
+  ],
+  "inputConfig": {
+    "spam_debit_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "L/detik"
+      }
+    },
+    "water_distribution_length_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "KM"
+      }
+    },
+    "daily_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "ltr",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "yearly_volume_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "ltr",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "consession_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"]
+      }
+    },
+    "construction_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun"
+      }
+    },
+   
+    "operational_period_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "suffix": "Tahun",
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_construction_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "start_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    },
+    "end_operational_year_value": {
+      "type": "text",
+      "props": {
+        "constraint": ["decimal"],
+        "disabled": true,
+        "placeholder": "Simpan untuk menampilkan hasil kalkulasi"
+      }
+    }
+  },
+  "fieldsAlias": {
+    "spam_debit_value": "Debit Spam (L/detik)",
+    "water_distribution_length_value": "Panjang Penyaluran Air (KM)",
+    "daily_volume_value" : "Volume Harian (ltr)",
+    "yearly_volume_value" : "Volume Tahunan (ltr)",
+    "consession_period_value": "Masa Konsesi (Tahun)",
+    "construction_period_value": "Masa Konstruksi (Tahun)",
+    "operational_period_value": "Masa Operasional (Tahun)",
+    "start_construction_year_value": "Tahun Mulai Konstruksi",
+    "end_construction_year_value": "Tahun Konstruksi Berakhir",
+    "start_operational_year_value": "Tahun Mulai Operasional",
+    "end_operational_year_value": "Tahun Operasional Berakhir"
+  },
+  "fieldsType": {
+    "spam_debit_value": {"type": "unit", "unit": " L/detik"},
+    "water_distribution_length_value": {"type": "unit", "unit": " KM"},
+    "consession_period_value": {"type": "unit", "unit": " Tahun"},
+    "construction_period_value": {"type": "unit", "unit": " Tahun"},
+    "operational_period_value": {"type": "unit", "unit": " Tahun"}
+  }
+}

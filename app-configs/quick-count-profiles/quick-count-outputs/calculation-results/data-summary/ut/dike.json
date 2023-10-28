@@ -1,0 +1,45 @@
+{
+  "fields": [
+    "dike_capacity_value",
+    "availability_payment_value",
+    "yearly_inflation_percentage",
+    "rates_adjustment_percentage",
+    "consession_period_value",
+    "operational_period_value",
+    "loan_period_value"
+  ],
+  "fieldsAlias": {
+    "dike_capacity_value": "Dike Capacity",
+    "availability_payment_value": "Availability Payment",
+    "yearly_inflation_percentage": "Yearly Inflation",
+    "rates_adjustment_percentage": "Rates Adjustment",
+    "consession_period_value": "Consession Period",
+    "operational_period_value": "Operational Period",
+    "loan_period_value": "Loan Period"
+  },
+  "fieldsType": {
+    "availability_payment_value": {
+      "type": "currency"
+    },
+    "yearly_inflation_percentage": {
+      "type": "unit",
+      "unit": "%"
+    },
+    "rates_adjustment_percentage": {
+      "type": "unit",
+      "unit": "%"
+    },
+    "consession_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    },
+    "operational_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    },
+    "loan_period_value": {
+      "type": "unit",
+      "unit": " Tahun"
+    }
+  }
+}

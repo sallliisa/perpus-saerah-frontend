@@ -1,0 +1,27 @@
+{
+    "inputConfig": {
+        "task_code": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "task_name": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "task_group": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        }
+    },
+    "fieldsAlias": {
+        "task_code": "Kode Permission",
+        "task_name": "Nama Permission",
+        "task_group": "Permission Group"
+    }
+}

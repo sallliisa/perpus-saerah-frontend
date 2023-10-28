@@ -1,0 +1,28 @@
+{
+    "inputConfig": {
+        "role_group_id": {
+            "type": "lookup",
+            "props": {
+                "getAPI": "role-groups",
+                "required": true
+            }
+        },
+        "role_code": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        },
+        "role_name": {
+            "type": "text",
+            "props": {
+                "required": true
+            }
+        }
+    },
+    "fieldsAlias": {
+        "role_group_id": "Role Group",
+        "role_code": "Kode Role",
+        "role_name": "Nama Role"
+    }
+}

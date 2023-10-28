@@ -1,0 +1,55 @@
+{
+  "fields": [
+    "year",
+    "equity_value",
+    "loan_value",
+    "repayment_value",
+    "interest_value",
+    "cash_flow_from_financing_value",
+    "kas_awal",
+    "kas_masuk_keluar",
+    "kas_akhir"
+  ],
+  "headerFields": [
+    [
+      {"id": "year", "rowspan": 2, "class": "p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "cash_in", "colspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "cash_out", "colspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "cash_flow_from_financing_value", "rowspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "kas_awal", "rowspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "kas_masuk_keluar", "rowspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"},
+      {"id": "kas_akhir", "rowspan": 2, "class": "text-center p-2 bg-c-surface-container-highest dark:bg-cd-surface-container-highest"}
+    ],
+    [
+      {"id": "equity_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "loan_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "repayment_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"},
+      {"id": "interest_value", "class": "bg-c-surface-container-high dark:bg-cd-surface-container-high p-2"}
+    ]
+  ],
+  "fieldsType": {
+    "equity_value": {"type": "currency"},
+    "loan_value": {"type": "currency"},
+    "repayment_value": {"type": "currency"},
+    "interest_value": {"type": "currency"},
+    "cash_flow_from_financing_value": {"type": "currency"},
+    "kas_awal": {"type": "currency"},
+    "kas_masuk_keluar": {"type": "currency"},
+    "kas_akhir": {"type": "currency"}
+  },
+  "fieldsAlias": {
+    "year": "Tahun Ke-",
+    "equity_value": "Equity",
+    "loan_value": "Loan",
+    "repayment_value": "Repayment",
+    "interest_value": "Interest",
+    "cash_flow_from_financing_value": "Cash Flow From Financing",
+    "kas_awal": "Kas Awal",
+    "kas_masuk_keluar": "Kas Masuk/Keluar",
+    "kas_akhir": "Kas Akhir",
+    "cash_in": "Cash In",
+    "cash_out": "Cash Out"
+  },
+  "getAPI": "yearly_cash_flow_financing_profit",
+  "paginated": true
+}

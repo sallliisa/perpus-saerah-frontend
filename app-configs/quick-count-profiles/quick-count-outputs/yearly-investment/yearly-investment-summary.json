@@ -1,0 +1,30 @@
+{
+  "dashboard": [
+    {"name": "Masa Konstruksi", "formatter": "_STRFNC_(data, parse) => `${data.construction_period_value} Tahun`_STRFNC_"},
+    {"name": "Periode Konstruksi", "formatter": "_STRFNC_(data, parse) => `Tahun ${data.start_construction_year_value} - ${data.end_construction_year_value}`_STRFNC_"},
+    {"name": "Masa Operasional", "formatter": "_STRFNC_(data, parse) => `${data.operational_period_value} Tahun`_STRFNC_"},
+    {"name": "Periode Operasional", "formatter": "_STRFNC_(data, parse) => `Tahun ${data.start_operational_year_value} - ${data.end_operational_year_value}`_STRFNC_"}
+  ],
+  "detail": {
+    "fields": [
+      "yearly_escalation_percentage",
+      "loan_percentage",
+      "equity_percentage",
+      "cost_of_debt_percentage",
+      "development_area_value"
+    ],
+    "fieldsAlias": {
+      "yearly_escalation_percentage": "Eskalasi/Tahun",
+      "loan_percentage": "Loan",
+      "equity_percentage": "Equity",
+      "cost_of_debt_percentage": "Cost of Debt (Bunga)",
+      "development_area_value": "Development Area"
+    },
+    "fieldsType": {
+      "yearly_escalation_percentage": {"type": "unit", "unit": "%"},
+      "loan_percentage": {"type": "unit", "unit": "%"},
+      "equity_percentage": {"type": "unit", "unit": "%"},
+      "cost_of_debt_percentage": {"type": "unit", "unit": "%"}
+    }
+  }
+}
