@@ -18,9 +18,9 @@ const config: Partial<BaseCRUDConfig> = {}
   <div>
     <main>
       <BaseCRUD :key="softReload().value['book']" main :config="config" :configOverride="props.configOverride">
-        <template #additionalShow="{data}">
+        <!-- <template #additionalShow="{data}">
           <BookAdditionalDetails :book="data"/>
-        </template>
+        </template> -->
       </BaseCRUD>
     </main>
   </div>

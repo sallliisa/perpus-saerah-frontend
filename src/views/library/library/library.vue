@@ -23,7 +23,7 @@ const search = ref()
         <Spinner/>
       </template>
       <Transition name="route" mode="out-in">
-        <BookList v-if="!$route.query['library_view']"/>
+        <BookList v-if="!$route.query['library_view']" :key="search" :search="search"/>
         <BookDetail v-else-if="$route.query['library_view'] == 'show'"/>
       </Transition>
     </Suspense>

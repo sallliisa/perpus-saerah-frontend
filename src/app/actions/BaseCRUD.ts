@@ -22,7 +22,7 @@ export const immutableDefaults: Partial<BaseCRUDConfig> = {
         delete: true,
         show: true
     },
-    fieldsExclude: ['class_model_name', 'id', 'integration_id', 'updated_by', 'created_by', 'status_code', 'longitude', 'map_address', 'deleted', 'deleted_by', 'deleted_at', 'created_at'],
+    fieldsExclude: ['class_model_name', 'id', 'integration_id', 'updated_by', 'created_by', 'status_code', 'longitude', 'map_address', 'deleted', 'deleted_by', 'deleted_at'],
     fieldsAlias: {
         created_at: 'Dibuat',
         updated_at: 'Diubah',

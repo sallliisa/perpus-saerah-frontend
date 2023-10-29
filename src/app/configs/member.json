@@ -5,7 +5,15 @@
     "fieldsAlias": {
         "user_name": "Nama",
         "user_email": "Email",
-        "user_password": "Password"
+        "user_password": "Password",
+        "address": "Alamat",
+        "city": "Kota",
+        "phone": "Nomor Telepon",
+        "identity_number": "Nomor KTP",
+        "img_identity_photo": "Foto KTP"
+    },
+    "fieldsType": {
+        "img_identity_photo": {"type": "image"}
     },
     "inputConfig": {
         "user_name": {

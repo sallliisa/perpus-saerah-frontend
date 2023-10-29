@@ -3,7 +3,15 @@
     "fieldAdd": ["name", "isbn", "author", "publisher", "publishing_city", "editor", "img_photo", "category_id", "stock", "active"],
     "fieldShow": ["name", "isbn", "author", "publisher", "publishing_city", "editor", "img_photo", "category_id", "stock", "active", "created_at", "updated_at"],
     "fieldsAlias": {
-        "name": "Judul"
+        "name": "Judul",
+        "isbn": "ISBN",
+        "author": "Author",
+        "publisher": "Penerbit",
+        "publishing_city": "Kota Penerbit",
+        "editor": "Editor",
+        "img_photo": "Foto Buku",
+        "category_id": "Kategori Buku",
+        "stock": "Stok"
     },
     "fieldsAlternateSource": {
         "category_id": "category_name"

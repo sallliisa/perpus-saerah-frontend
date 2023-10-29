@@ -3,7 +3,17 @@
     "fieldShow": ["member_id", "officer_id", "book_id", "created_at", "returned_at", "fine"],
     "fieldAdd": ["member_id", "book_id"],
     "fieldsType": {
-        "fine": {"type": "currency"}
+        "fine": {"type": "currency"},
+        "created_at": {"type": "datetime"},
+        "returned_at": {"type": "datetime"}
+    },
+    "fieldsAlias": {
+        "member_id": "Anggota",
+        "book_id": "Buku",
+        "officer_id": "Petugas peminjam",
+        "created_at": "Dipinjam pada",
+        "returned_at": "Dikembalikan pada",
+        "fine": "Denda"
     },
     "inputConfig": {
         "member_id": {
@@ -11,7 +21,10 @@
             "props": {
                 "required": true,
                 "getAPI": "member",
-                "view": "user_name"
+                "view": "user_name",
+                "fieldsAlias": {
+                    "user_name": "Nama"
+                }
             }
         },
         "book_id": {

@@ -389,7 +389,11 @@ console.log("CLOG: BASECRUD MOUNTED")
         <!-- MODE: SHOW -->
         <template v-else-if="currentView == 'show' && baseConfig.actions?.show">
           <Card v-if="!$slots.show">
-            <Detail v-bind="detailProps" @update:model-value="(event) => activeData = event"/>
+            <Detail v-bind="detailProps" @update:model-value="(event) => activeData = event">
+              <template v-for="slotname in Object.keys($slots)" v-slot:[String(slotname)]="data">
+                <slot v-if="slotname.slice(0, 2) === 's-'" :name="slotname" v-bind="(data as any)"></slot>
+              </template>
+            </Detail>
           </Card>
           <slot v-else name="show" v-bind="{baseConfig, detailProps, setCRUDMode}"></slot>
           <slot v-if="$slots.additionalShow && activeData" name="additionalShow" v-bind="{data: activeData}"></slot>

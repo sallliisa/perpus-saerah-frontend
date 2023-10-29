@@ -12,7 +12,7 @@ const data = await services.list('book', {search: props.search, limit: 1000000})
 </script>
 
 <template>
-  <div class="grid grid-dynamic-[300px] gap-4">
+  <div v-if="data?.length" class="grid grid-dynamic-[300px] gap-4">
     <Card v-for="book in data" class="max-w-sm p-0 gap-0" interactive @click="() => $router.push({query: {library_view: 'show', library_id: book.id}})">
       <ImagePreview :url="book.img_photo.preview" class="aspect-square h-[300px]"/>
       <div class="p-4 flex flex-col gap-1">
@@ -21,4 +21,5 @@ const data = await services.list('book', {search: props.search, limit: 1000000})
       </div>
     </Card>
   </div>
+  <div v-else class="text-muted">Tidak ada buku yang ditemukan</div>
 </template>

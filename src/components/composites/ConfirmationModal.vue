@@ -67,13 +67,16 @@ const actionMap = {
       <div class="flex flex-col gap-4">
         <div>{{ message }}</div>
         <div class="flex flex-row w-full items-center gap-4 justify-end">
-          <Button
-            v-for="action in actions"
-            v-bind="confirmationButtonAppearance[action].props"
-            @click="action === 'n' ? [closeModal(), actionMap[action](closeModal)] : actionMap[action](closeModal)"
-          >
-            {{ confirmationButtonAppearance[action].label }}
-          </Button>
+          <template v-for="action in actions">
+            <Button
+              v-if="!$slots[`b-${action}`]"
+              v-bind="confirmationButtonAppearance[action].props"
+              @click="action === 'n' ? [closeModal(), actionMap[action](closeModal)] : actionMap[action](closeModal)"
+            >
+              {{ confirmationButtonAppearance[action].label }}
+            </Button>
+            <slot v-else :name="`b-${action}`"></slot>
+          </template>
         </div>
       </div>
     </template>
