@@ -31,10 +31,11 @@ const config: Partial<BaseCRUDConfig> = {}
               title="Verifikasi member perpustakaan"
               message="Aksi ini hanya bisa dilakukan sekali dan tidak dapat diulang lagi."
               :actions="['y', 'n']"
-              :onConfirm="async () => {
+              :onConfirm="async (closeModal: Function) => {
                 services.post('member/verify', {id: data.id, verification_code: 1}).then(res => {
                   toast().setSuccess('Berhasil memverifikasi member!')
                   softReload().triggerChange('member')
+                  closeModal()
                 })
               }"
               :onCancel="async () => {
